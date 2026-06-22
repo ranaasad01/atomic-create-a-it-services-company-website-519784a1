@@ -33,8 +33,8 @@ const services = [
     description:
       "Architect, migrate, and manage enterprise-grade cloud environments on AWS, Azure, and GCP with zero-downtime deployments.",
     features: ["Multi-cloud strategy", "Auto-scaling clusters", "Cost optimization", "Disaster recovery"],
-    color: "from-blue-500 to-cyan-400",
-    glow: "shadow-blue-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "security",
@@ -43,8 +43,8 @@ const services = [
     description:
       "Protect your digital assets with end-to-end security frameworks, real-time threat detection, and compliance management.",
     features: ["Zero-trust architecture", "SOC 2 compliance", "Penetration testing", "24/7 threat monitoring"],
-    color: "from-violet-500 to-purple-400",
-    glow: "shadow-violet-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "network",
@@ -53,8 +53,8 @@ const services = [
     description:
       "Design and deploy high-performance, resilient network infrastructure that scales with your business demands.",
     features: ["SD-WAN deployment", "Network segmentation", "Load balancing", "VPN & MPLS"],
-    color: "from-emerald-500 to-teal-400",
-    glow: "shadow-emerald-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "analytics",
@@ -63,8 +63,8 @@ const services = [
     description:
       "Transform raw data into actionable intelligence with our advanced analytics platforms and real-time dashboards.",
     features: ["BI dashboards", "Predictive analytics", "Data warehousing", "ETL pipelines"],
-    color: "from-orange-500 to-amber-400",
-    glow: "shadow-orange-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "devops",
@@ -73,8 +73,8 @@ const services = [
     description:
       "Accelerate software delivery with CI/CD pipelines, infrastructure-as-code, and intelligent automation workflows.",
     features: ["CI/CD pipelines", "Kubernetes orchestration", "IaC with Terraform", "GitOps workflows"],
-    color: "from-pink-500 to-rose-400",
-    glow: "shadow-pink-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "support",
@@ -83,8 +83,8 @@ const services = [
     description:
       "Round-the-clock expert support with guaranteed SLAs, proactive monitoring, and dedicated account management.",
     features: ["24/7 help desk", "Proactive monitoring", "On-site engineers", "SLA guarantees"],
-    color: "from-sky-500 to-blue-400",
-    glow: "shadow-sky-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
 ];
 
@@ -111,102 +111,102 @@ const caseStudies = [
       "Built a secure, federated data infrastructure enabling real-time patient analytics across 50 hospitals while achieving full HIPAA and SOC 2 compliance.",
     metrics: [
       { label: "Hospitals Connected", value: "50" },
+      { label: "Data Points/Day", value: "10M+" },
       { label: "Compliance", value: "100%" },
-      { label: "Data Latency", value: "<50ms" },
     ],
-    image: "https://www.keycdn.com/img/support/network-latency.png",
-    tag: "Security + Cloud",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
+    tag: "Security + Data",
   },
   {
     id: "retail",
     category: "Retail",
-    title: "E-commerce platform handling 10M+ daily active users",
+    title: "Zero-downtime migration for a global e-commerce platform",
     description:
-      "Engineered a globally distributed microservices architecture for a top-10 e-commerce brand, enabling seamless Black Friday traffic spikes.",
+      "Migrated a 200-node legacy infrastructure to a modern Kubernetes-based platform with zero downtime during peak holiday season.",
     metrics: [
-      { label: "Daily Active Users", value: "10M+" },
-      { label: "Response Time", value: "120ms" },
-      { label: "Revenue Impact", value: "+34%" },
+      { label: "Nodes Migrated", value: "200" },
+      { label: "Downtime", value: "0 min" },
+      { label: "Performance Gain", value: "3.5×" },
     ],
-    image: "https://www.keycdn.com/img/support/network-latency.png",
-    tag: "DevOps + Analytics",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+    tag: "Cloud + Network",
   },
 ];
 
 const teamMembers = [
   {
     id: "ceo",
-    name: "Alexandra Chen",
+    name: "Marcus Chen",
     role: "CEO & Co-Founder",
-    bio: "15+ years leading enterprise digital transformation initiatives for Fortune 500 companies.",
-    avatar: "AC",
+    bio: "Former VP of Engineering at AWS with 20+ years in enterprise infrastructure.",
+    avatar: "MC",
   },
   {
     id: "cto",
-    name: "Marcus Rivera",
-    role: "CTO & Cloud Architect",
-    bio: "Former AWS Principal Engineer with deep expertise in distributed systems and cloud-native architecture.",
-    avatar: "MR",
+    name: "Sarah Mitchell",
+    role: "CTO",
+    bio: "Ex-Google SRE lead, architect of systems serving 500M+ daily users.",
+    avatar: "SM",
   },
   {
-    id: "ciso",
-    name: "Priya Patel",
+    id: "cso",
+    name: "David Park",
     role: "Chief Security Officer",
-    bio: "Certified CISSP with 12 years securing critical infrastructure for financial and healthcare sectors.",
-    avatar: "PP",
+    bio: "15 years in cybersecurity, former NSA consultant and CISSP certified.",
+    avatar: "DP",
   },
   {
     id: "vp",
-    name: "James O'Brien",
-    role: "VP of Engineering",
-    bio: "Full-stack engineering leader who has scaled engineering teams from 5 to 200+ across three continents.",
-    avatar: "JO",
+    name: "Priya Sharma",
+    role: "VP of Client Success",
+    bio: "Managed enterprise accounts for Fortune 500 companies across 3 continents.",
+    avatar: "PS",
   },
 ];
 
 const testimonials = [
   {
     id: "t1",
-    name: "Sarah Mitchell",
-    role: "CTO, FinEdge Capital",
-    quote:
+    name: "James Whitfield",
+    role: "CTO, Meridian Financial",
+    content:
       "NexaCore transformed our entire cloud infrastructure in under 90 days. The performance gains were immediate and the cost savings exceeded our projections by 40%.",
     rating: 5,
-    avatar: "SM",
+    avatar: "JW",
   },
   {
     id: "t2",
-    name: "David Park",
-    role: "VP Engineering, MedCore Systems",
-    quote:
-      "Their cybersecurity team is world-class. They identified vulnerabilities our internal team had missed for years and implemented a zero-trust framework that gave us full SOC 2 compliance.",
+    name: "Elena Rodriguez",
+    role: "VP Engineering, HealthBridge",
+    content:
+      "Their cybersecurity team is world-class. We went from failing audits to achieving SOC 2 Type II certification in just 6 months. Absolutely outstanding.",
     rating: 5,
-    avatar: "DP",
+    avatar: "ER",
   },
   {
     id: "t3",
-    name: "Elena Vasquez",
-    role: "COO, RetailMax Global",
-    quote:
-      "We handled our biggest Black Friday ever with zero downtime. NexaCore's architecture scaled flawlessly to 10x our normal traffic. Absolutely phenomenal work.",
+    name: "Tom Nakamura",
+    role: "Director of IT, GlobalRetail Co.",
+    content:
+      "The managed support team feels like an extension of our own IT department. 24/7 coverage, proactive alerts, and they've prevented 3 major outages this year alone.",
     rating: 5,
-    avatar: "EV",
+    avatar: "TN",
   },
 ];
 
-const technologies = [
-  { name: "AWS", icon: Cloud },
-  { name: "Azure", icon: Server },
-  { name: "GCP", icon: Globe },
-  { name: "Kubernetes", icon: GitBranch },
-  { name: "Terraform", icon: Zap },
-  { name: "Docker", icon: Server },
-  { name: "Datadog", icon: BarChart3 },
-  { name: "Vault", icon: Lock },
-  { name: "Ansible", icon: GitBranch },
-  { name: "Prometheus", icon: TrendingUp },
-  { name: "Grafana", icon: BarChart3 },
-  { name: "Istio", icon: Network },
+const techStack = [
+  { name: "AWS", category: "Cloud" },
+  { name: "Azure", category: "Cloud" },
+  { name: "GCP", category: "Cloud" },
+  { name: "Kubernetes", category: "DevOps" },
+  { name: "Terraform", category: "IaC" },
+  { name: "Docker", category: "DevOps" },
+  { name: "Datadog", category: "Monitoring" },
+  { name: "Splunk", category: "Security" },
+  { name: "CrowdStrike", category: "Security" },
+  { name: "Cisco", category: "Network" },
+  { name: "Palo Alto", category: "Security" },
+  { name: "Snowflake", category: "Data" },
 ];
 
 const faqs = [
@@ -214,193 +214,208 @@ const faqs = [
     id: "f1",
     question: "What industries do you specialize in?",
     answer:
-      "We serve clients across FinTech, Healthcare, Retail, Manufacturing, and Government sectors. Our team has deep domain expertise in regulated industries requiring strict compliance frameworks like HIPAA, SOC 2, PCI-DSS, and FedRAMP.",
+      "We serve clients across financial services, healthcare, retail, manufacturing, and government sectors. Our team has deep domain expertise in regulated industries with strict compliance requirements.",
   },
   {
     id: "f2",
-    question: "How quickly can you onboard our organization?",
+    question: "How quickly can you onboard a new client?",
     answer:
-      "Our rapid onboarding process typically takes 2–4 weeks depending on the scope of services. We begin with a comprehensive IT audit, followed by a tailored roadmap and phased implementation to minimize disruption.",
+      "Our standard onboarding takes 2–4 weeks depending on scope. For urgent needs, we offer an expedited 72-hour emergency onboarding for critical infrastructure support.",
   },
   {
     id: "f3",
-    question: "Do you offer 24/7 support?",
+    question: "Do you offer flexible pricing models?",
     answer:
-      "Yes. All managed service plans include 24/7/365 monitoring and support with guaranteed response times. Our global NOC team ensures your systems are always operational, with escalation paths and dedicated account managers.",
+      "Yes. We offer monthly retainers, project-based pricing, and hybrid models. All engagements start with a free audit so we can scope the work accurately before any commitment.",
   },
   {
     id: "f4",
-    question: "What cloud platforms do you support?",
+    question: "What does your SLA guarantee cover?",
     answer:
-      "We are certified partners with AWS, Microsoft Azure, and Google Cloud Platform. We also support hybrid and multi-cloud architectures, helping you avoid vendor lock-in while optimizing for cost and performance.",
+      "Our SLAs cover uptime, response times, and resolution times. We guarantee 99.9% uptime for managed services, with 15-minute response times for P1 incidents and financial penalties if we miss targets.",
   },
   {
     id: "f5",
-    question: "How do you handle data security and compliance?",
+    question: "Can you work with our existing IT team?",
     answer:
-      "Security is embedded in everything we do. We follow a zero-trust security model, conduct regular penetration testing, and maintain compliance with major frameworks including SOC 2 Type II, ISO 27001, HIPAA, and GDPR.",
+      "Absolutely. We operate as a seamless extension of your internal team. We integrate with your existing tools, workflows, and communication channels to minimize disruption.",
   },
 ];
 
-const values = [
-  { icon: Shield, title: "Security First", desc: "Every solution is built with security as the foundation, not an afterthought." },
-  { icon: Zap, title: "Performance Driven", desc: "We engineer for speed, reliability, and scalability at every layer of the stack." },
-  { icon: Users, title: "Client Partnership", desc: "We embed with your team, aligning our success metrics with your business outcomes." },
-  { icon: Award, title: "Certified Excellence", desc: "Our engineers hold 200+ certifications across all major cloud and security platforms." },
+const whyChooseUs = [
+  {
+    id: "w1",
+    icon: Award,
+    title: "Certified Experts",
+    description: "Our engineers hold 200+ certifications across AWS, Azure, GCP, Cisco, and more.",
+  },
+  {
+    id: "w2",
+    icon: Zap,
+    title: "Lightning Fast Delivery",
+    description: "We move fast without breaking things. Most projects go live 30% ahead of schedule.",
+  },
+  {
+    id: "w3",
+    icon: Lock,
+    title: "Security-First Approach",
+    description: "Every solution is architected with security baked in from day one, not bolted on.",
+  },
+  {
+    id: "w4",
+    icon: TrendingUp,
+    title: "Proven ROI",
+    description: "Our clients see an average 3.2× ROI within the first year of engagement.",
+  },
+  {
+    id: "w5",
+    icon: Globe,
+    title: "Global Coverage",
+    description: "With engineers across 12 time zones, we provide truly round-the-clock support.",
+  },
+  {
+    id: "w6",
+    icon: Users,
+    title: "Dedicated Teams",
+    description: "You get a named account manager and dedicated pod — not a ticket queue.",
+  },
 ];
 
-// ─── Main Page Component ─────────────────────────────────────────────────────
+// ─── Component ───────────────────────────────────────────────────────────────
 
 export default function HomePage() {
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [openFaq, setOpenFaq] = useState<string | null>(null);
-  const [formData, setFormData] = useState({ name: "", email: "", company: "", message: "" });
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [activeTestimonial, setActiveTestimonial] = useState(0);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSubmitted(true);
-    setTimeout(() => setFormSubmitted(false), 4000);
+    alert("Thanks! We'll be in touch within 24 hours.");
     setFormData({ name: "", email: "", company: "", message: "" });
   };
 
   return (
     <main className="overflow-x-hidden">
 
-      {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-[#FAFAF7] to-[#FDF6E3] overflow-hidden">
-        {/* Decorative blobs */}
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#B8860B]/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-[#F5C518]/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#B8860B]/5 rounded-full blur-3xl" />
+      {/* ── 1. HERO SECTION ─────────────────────────────────────────── */}
+      <section className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden">
+        {/* Background grid pattern */}
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+          }}
+        />
+        {/* Subtle radial gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+          {/* Badge */}
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8"
+          >
+            <Sparkles className="w-4 h-4" />
+            Trusted by 500+ Enterprise Clients
+          </motion.div>
+
+          {/* Headline */}
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight mb-6"
+          >
+            Engineering the Future
+            <br />
+            <span className="text-white">
+              of Enterprise IT
+            </span>
+          </motion.h1>
+
+          {/* Subheadline */}
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed"
+          >
+            {APP_FULL_NAME} delivers cloud infrastructure, cybersecurity, and managed IT
+            services that help enterprises scale securely and efficiently.
+          </motion.p>
+
+          {/* CTA Buttons */}
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
+          >
+            <Link
+              href="#contact"
+              className="px-8 py-4 rounded-xl bg-white text-black font-semibold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:scale-105 active:scale-95"
+            >
+              Get a Free Audit
+            </Link>
+            <Link
+              href="#services"
+              className="px-8 py-4 rounded-xl border border-white text-white font-semibold text-lg hover:bg-white hover:text-black transition-all duration-200"
+            >
+              Explore Services
+            </Link>
+          </motion.div>
+
+          {/* Floating Stat Cards */}
           <motion.div
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="flex flex-col items-center"
+            className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto"
           >
-            {/* Badge */}
-            <motion.div variants={fadeInUp} className="mb-6">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FDF6E3] text-[#B8860B] border border-[#E8DFC0] text-sm font-medium">
-                <Sparkles className="w-4 h-4" />
-                Trusted by 500+ Enterprise Clients
-              </span>
-            </motion.div>
-
-            {/* Headline */}
-            <motion.h1
-              variants={fadeInUp}
-              className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight"
-            >
-              <span className="bg-gradient-to-r from-[#1A1A1A] to-[#4A4A4A] bg-clip-text text-transparent">
-                Engineering the
-              </span>
-              <br />
-              <span className="text-[#B8860B]">Future of IT</span>
-            </motion.h1>
-
-            {/* Subheadline */}
-            <motion.p
-              variants={fadeInUp}
-              className="text-lg sm:text-xl text-[#6B6B6B] max-w-2xl mb-10 leading-relaxed"
-            >
-              {APP_FULL_NAME} delivers enterprise-grade cloud, cybersecurity, and managed IT services
-              that help modern businesses scale securely and efficiently.
-            </motion.p>
-
-            {/* CTA Buttons */}
-            <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 mb-16">
-              <Link
-                href="#contact"
-                className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#F5C518] text-white font-semibold text-lg shadow-lg shadow-yellow-600/30 hover:shadow-yellow-600/50 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center gap-2"
+            {stats.map((stat) => (
+              <motion.div
+                key={stat.label}
+                variants={scaleIn}
+                className="bg-black/80 border border-white/20 rounded-2xl p-4 backdrop-blur-sm"
               >
-                Get a Free Audit <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#services"
-                className="px-8 py-4 rounded-xl border border-[#E8DFC0] text-[#1A1A1A] font-semibold text-lg hover:bg-[#FDF6E3] transition-all duration-200 flex items-center gap-2"
-              >
-                Explore Services
-              </Link>
-            </motion.div>
-
-            {/* Stats Row */}
-            <motion.div
-              variants={fadeInUp}
-              className="flex flex-wrap justify-center gap-8 sm:gap-12"
-            >
-              {stats.map((stat, i) => (
-                <div key={stat.label} className="flex items-center gap-4">
-                  {i > 0 && <div className="hidden sm:block w-px h-10 bg-[#E8DFC0]" />}
-                  <div className="text-center">
-                    <div className="text-3xl font-extrabold text-[#B8860B]">
-                      {stat.value}{stat.suffix}
-                    </div>
-                    <div className="text-sm text-[#6B6B6B] mt-0.5">{stat.label}</div>
-                  </div>
+                <div className="text-2xl font-bold text-white">
+                  {stat.value}
+                  <span className="text-gray-400">{stat.suffix}</span>
                 </div>
-              ))}
+                <div className="text-xs text-gray-400 mt-1">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Scroll Indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50"
+          >
+            <span className="text-xs uppercase tracking-widest">Scroll</span>
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
+            >
+              <ChevronDown className="w-5 h-5" />
             </motion.div>
           </motion.div>
         </div>
-
-        {/* Floating tech badges */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="absolute left-8 top-1/3 hidden xl:flex flex-col gap-3"
-        >
-          {["AWS Certified", "ISO 27001", "SOC 2 Type II"].map((badge) => (
-            <div
-              key={badge}
-              className="px-4 py-2 rounded-lg bg-white border border-[#E8DFC0] shadow-md text-sm font-medium text-[#1A1A1A] flex items-center gap-2"
-            >
-              <CheckCircle className="w-4 h-4 text-[#B8860B]" />
-              {badge}
-            </div>
-          ))}
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1.2, duration: 0.6 }}
-          className="absolute right-8 top-1/3 hidden xl:flex flex-col gap-3"
-        >
-          {["Azure Partner", "GCP Partner", "HIPAA Compliant"].map((badge) => (
-            <div
-              key={badge}
-              className="px-4 py-2 rounded-lg bg-white border border-[#E8DFC0] shadow-md text-sm font-medium text-[#1A1A1A] flex items-center gap-2"
-            >
-              <CheckCircle className="w-4 h-4 text-[#B8860B]" />
-              {badge}
-            </div>
-          ))}
-        </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#8B8B8B] text-xs"
-        >
-          <span>Scroll to explore</span>
-          <div className="w-6 h-10 rounded-full border-2 border-[#E8DFC0] flex items-start justify-center pt-2">
-            <motion.div
-              animate={{ y: [0, 12, 0] }}
-              transition={{ repeat: Infinity, duration: 1.5 }}
-              className="w-1.5 h-1.5 rounded-full bg-[#B8860B]"
-            />
-          </div>
-        </motion.div>
       </section>
 
-      {/* ── SERVICES ──────────────────────────────────────────────────────── */}
-      <section id="services" className="py-24 bg-[#FAFAF7]">
+      {/* ── 2. SERVICES SECTION ─────────────────────────────────────── */}
+      <section id="services" className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -409,15 +424,14 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
               What We Do
             </motion.p>
-            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-[#1A1A1A] mb-4">
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-black mb-4">
               Enterprise IT Services
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
-              From cloud migration to cybersecurity, we deliver end-to-end technology solutions
-              that drive measurable business outcomes.
+            <motion.p variants={fadeInUp} className="text-lg text-gray-600 max-w-2xl mx-auto">
+              End-to-end technology solutions designed to accelerate growth, reduce risk, and maximize operational efficiency.
             </motion.p>
           </motion.div>
 
@@ -428,160 +442,168 @@ export default function HomePage() {
             variants={staggerContainer}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {services.map((service) => {
-              const Icon = service.icon;
-              return (
-                <motion.div
-                  key={service.id}
-                  variants={scaleIn}
-                  className="group relative bg-white border border-[#E8DFC0] hover:border-[#B8860B]/40 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
-                >
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 shadow-lg ${service.glow}`}>
-                    <Icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">{service.title}</h3>
-                  <p className="text-[#6B6B6B] text-sm mb-4 leading-relaxed">{service.description}</p>
-                  <ul className="space-y-2 mb-4">
-                    {service.features.map((f) => (
-                      <li key={f} className="flex items-center gap-2 text-sm text-[#4A4A4A]">
-                        <CheckCircle className="w-4 h-4 text-[#B8860B] flex-shrink-0" />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <button className="text-sm font-semibold text-[#B8860B] flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Learn more <ArrowRight className="w-4 h-4" />
-                  </button>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ── STATS BAR ─────────────────────────────────────────────────────── */}
-      <section className="py-16 bg-gradient-to-r from-[#B8860B] to-[#D4A017]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-8"
-          >
-            {stats.map((stat, i) => (
-              <motion.div key={stat.label} variants={fadeInUp} className="text-center relative">
-                {i > 0 && (
-                  <div className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-12 bg-white/20 hidden lg:block" />
-                )}
-                <div className="text-4xl font-extrabold text-white mb-1">
-                  {stat.value}{stat.suffix}
+            {services.map((service) => (
+              <motion.div
+                key={service.id}
+                variants={fadeInUp}
+                className="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-black hover:shadow-md shadow-sm transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-xl bg-black flex items-center justify-center mb-4">
+                  <service.icon className="w-6 h-6 text-white" />
                 </div>
-                <div className="text-sm text-white/80">{stat.label}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed">{service.description}</p>
+                <ul className="space-y-2 mb-4">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-2 text-sm text-gray-700">
+                      <CheckCircle className="w-4 h-4 text-black flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center gap-1 text-sm font-semibold text-black hover:underline"
+                >
+                  Learn more <ArrowRight className="w-4 h-4" />
+                </Link>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* ── ABOUT ─────────────────────────────────────────────────────────── */}
-      <section id="about" className="py-24 bg-white">
+      {/* ── 3. ABOUT / WHY CHOOSE US SECTION ────────────────────────── */}
+      <section id="about" className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+            {/* Left: Text */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={fadeInLeft}
+            >
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">About Us</p>
+              <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                We Build Technology That{" "}
+                <span className="text-black font-extrabold">Scales With You</span>
+              </h2>
+              <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                Founded in 2009, {APP_FULL_NAME} has grown from a boutique IT consultancy to a
+                full-service enterprise technology partner trusted by Fortune 500 companies worldwide.
+              </p>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Our mission is simple: <span className="text-black font-semibold">eliminate technology friction</span> so
+                your business can focus on what matters most. We combine deep technical expertise with
+                a client-first approach to deliver solutions that actually work.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="#contact"
+                  className="px-6 py-3 rounded-xl bg-black text-white font-semibold hover:bg-gray-800 transition-colors"
+                >
+                  Work With Us
+                </Link>
+                <Link
+                  href="#case-studies"
+                  className="px-6 py-3 rounded-xl border border-gray-200 text-gray-900 font-semibold hover:border-black transition-colors"
+                >
+                  View Case Studies
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Right: Feature Grid */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
               variants={staggerContainer}
+              className="grid grid-cols-2 gap-4"
             >
-              <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
-                About NexaCore
-              </motion.p>
-              <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-[#1A1A1A] mb-6">
-                We Build Technology That Scales With You
-              </motion.h2>
-              <motion.p variants={fadeInUp} className="text-[#6B6B6B] text-lg mb-6 leading-relaxed">
-                Founded in 2009, NexaCore IT Solutions has grown from a boutique consultancy to a
-                global technology partner serving 500+ enterprise clients across 30 countries.
-              </motion.p>
-              <motion.p variants={fadeInUp} className="text-[#6B6B6B] mb-8 leading-relaxed">
-                Our mission is simple: deliver technology solutions that create real, measurable
-                business value. We combine deep technical expertise with strategic business acumen
-                to help organizations navigate digital transformation with confidence.
-              </motion.p>
-              <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {values.map((v) => {
-                  const Icon = v.icon;
-                  return (
-                    <motion.div
-                      key={v.title}
-                      variants={fadeInUp}
-                      className="flex gap-3 p-4 rounded-xl bg-[#FAFAF7] border border-[#E8DFC0]"
-                    >
-                      <div className="w-10 h-10 rounded-lg bg-[#FDF6E3] flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-5 h-5 text-[#B8860B]" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-[#1A1A1A] text-sm mb-1">{v.title}</div>
-                        <div className="text-[#6B6B6B] text-xs leading-relaxed">{v.desc}</div>
-                      </div>
-                    </motion.div>
-                  );
-                })}
-              </motion.div>
-            </motion.div>
-
-            {/* Visual side */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-80px" }}
-              variants={fadeInRight}
-              className="relative"
-            >
-              <div className="relative rounded-2xl overflow-hidden bg-[#FDF6E3] p-8 border border-[#E8DFC0]">
-                <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { icon: Globe, label: "30+ Countries", sub: "Global Reach" },
-                    { icon: Users, label: "500+ Clients", sub: "Enterprise Scale" },
-                    { icon: Award, label: "200+ Certs", sub: "Certified Experts" },
-                    { icon: TrendingUp, label: "15+ Years", sub: "Industry Experience" },
-                  ].map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <div
-                        key={item.label}
-                        className="bg-white rounded-xl p-5 border border-[#E8DFC0] text-center shadow-sm"
-                      >
-                        <Icon className="w-8 h-8 text-[#B8860B] mx-auto mb-2" />
-                        <div className="font-bold text-[#1A1A1A] text-lg">{item.label}</div>
-                        <div className="text-[#6B6B6B] text-xs">{item.sub}</div>
-                      </div>
-                    );
-                  })}
-                </div>
-                <div className="mt-4 p-4 bg-white rounded-xl border border-[#E8DFC0] shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-3 h-3 rounded-full bg-emerald-400" />
-                    <span className="text-sm font-medium text-[#1A1A1A]">All Systems Operational</span>
+              {[
+                { icon: Server, label: "Cloud-Native", desc: "Built for modern infrastructure" },
+                { icon: Shield, label: "Security-First", desc: "Zero-trust by default" },
+                { icon: Zap, label: "High Performance", desc: "Sub-100ms response times" },
+                { icon: Users, label: "Expert Team", desc: "200+ certified engineers" },
+              ].map((item) => (
+                <motion.div
+                  key={item.label}
+                  variants={scaleIn}
+                  className="bg-white border border-gray-200 rounded-2xl p-5"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-black flex items-center justify-center mb-3">
+                    <item.icon className="w-5 h-5 text-white" />
                   </div>
-                  <div className="space-y-2">
-                    {["Cloud Infrastructure", "Security Operations", "Network Monitoring"].map((sys) => (
-                      <div key={sys} className="flex items-center justify-between">
-                        <span className="text-xs text-[#6B6B6B]">{sys}</span>
-                        <span className="text-xs font-semibold text-emerald-500">99.99%</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+                  <h4 className="font-bold text-gray-900 mb-1">{item.label}</h4>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
+
+          {/* Why Choose Us */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={staggerContainer}
+          >
+            <motion.div variants={fadeInUp} className="text-center mb-12">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">Why Choose Us</p>
+              <h2 className="text-4xl font-extrabold text-gray-900">The {APP_NAME} Difference</h2>
+            </motion.div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {whyChooseUs.map((item) => (
+                <motion.div
+                  key={item.id}
+                  variants={fadeInUp}
+                  className="bg-white border border-gray-200 rounded-2xl p-6"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-black flex items-center justify-center mb-4">
+                    <item.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* ── TECHNOLOGIES ──────────────────────────────────────────────────── */}
-      <section id="technologies" className="py-24 bg-[#FAFAF7]">
+      {/* ── 4. STATS SECTION ────────────────────────────────────────── */}
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={staggerContainer}
+            className="grid grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            {stats.map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                variants={fadeInUp}
+                className={`text-center ${
+                  index < stats.length - 1 ? "lg:border-r border-white/20" : ""
+                }`}
+              >
+                <div className="text-4xl sm:text-5xl font-extrabold text-white mb-2">
+                  {stat.value}
+                  <span className="text-gray-400">{stat.suffix}</span>
+                </div>
+                <div className="text-gray-400 font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── 5. TECH STACK SECTION ───────────────────────────────────── */}
+      <section id="technologies" className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -590,12 +612,15 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
               Our Stack
             </motion.p>
-            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-[#1A1A1A] mb-4">
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
               Technologies We Master
             </motion.h2>
+            <motion.p variants={fadeInUp} className="text-lg text-gray-600 max-w-2xl mx-auto">
+              We work with the industry's leading platforms and tools to deliver best-in-class solutions.
+            </motion.p>
           </motion.div>
 
           <motion.div
@@ -603,27 +628,27 @@ export default function HomePage() {
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             variants={staggerContainer}
-            className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4"
+            className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4"
           >
-            {technologies.map((tech) => {
-              const Icon = tech.icon;
-              return (
-                <motion.div
-                  key={tech.name}
-                  variants={scaleIn}
-                  className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white border border-[#E8DFC0] hover:border-[#B8860B]/40 shadow-sm transition-all duration-200 group"
-                >
-                  <Icon className="w-8 h-8 text-[#B8860B] group-hover:scale-110 transition-transform" />
-                  <span className="text-xs font-medium text-[#4A4A4A]">{tech.name}</span>
-                </motion.div>
-              );
-            })}
+            {techStack.map((tech) => (
+              <motion.div
+                key={tech.name}
+                variants={scaleIn}
+                className="bg-white border border-gray-200 hover:border-black rounded-2xl p-4 text-center shadow-sm hover:shadow-md transition-all duration-300 group"
+              >
+                <div className="w-10 h-10 rounded-lg bg-black flex items-center justify-center mx-auto mb-3">
+                  <Server className="w-5 h-5 text-white" />
+                </div>
+                <div className="text-sm font-semibold text-gray-700">{tech.name}</div>
+                <div className="text-xs text-gray-500 mt-1">{tech.category}</div>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ──────────────────────────────────────────────────── */}
-      <section id="testimonials" className="py-24 bg-white">
+      {/* ── 6. TESTIMONIALS SECTION ─────────────────────────────────── */}
+      <section className="bg-black py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -632,61 +657,68 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-3">
               Client Stories
             </motion.p>
-            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-[#1A1A1A] mb-4">
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
               Trusted by Industry Leaders
             </motion.h2>
           </motion.div>
 
-          <div className="relative">
-            <motion.div
-              key={activeTestimonial}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="bg-[#FAFAF7] border border-[#E8DFC0] shadow-sm rounded-2xl p-8 md:p-12 max-w-3xl mx-auto text-center"
-            >
-              <div className="flex justify-center gap-1 mb-6">
-                {Array.from({ length: testimonials[activeTestimonial].rating }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-amber-400 fill-amber-400" />
-                ))}
-              </div>
-              <p className="text-[#4A4A4A] text-lg md:text-xl leading-relaxed mb-8 italic">
-                &ldquo;{testimonials[activeTestimonial].quote}&rdquo;
-              </p>
-              <div className="flex items-center justify-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#B8860B] to-[#F5C518] flex items-center justify-center text-white font-bold">
-                  {testimonials[activeTestimonial].avatar}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={staggerContainer}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10"
+          >
+            {testimonials.map((t, index) => (
+              <motion.div
+                key={t.id}
+                variants={fadeInUp}
+                onClick={() => setActiveTestimonial(index)}
+                className={`bg-white border rounded-2xl p-6 cursor-pointer transition-all duration-300 ${
+                  activeTestimonial === index
+                    ? "border-white shadow-lg shadow-white/10"
+                    : "border-gray-200 hover:border-gray-400"
+                }`}
+              >
+                <div className="flex gap-1 mb-4">
+                  {Array.from({ length: t.rating }).map((_, i) => (
+                    <Star key={i} className="w-4 h-4 text-black fill-black" />
+                  ))}
                 </div>
-                <div className="text-left">
-                  <div className="font-bold text-[#1A1A1A]">{testimonials[activeTestimonial].name}</div>
-                  <div className="text-sm text-[#6B6B6B]">{testimonials[activeTestimonial].role}</div>
+                <p className="text-gray-700 text-sm leading-relaxed mb-6">&ldquo;{t.content}&rdquo;</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 font-bold text-sm">
+                    {t.avatar}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900 text-sm">{t.name}</div>
+                    <div className="text-gray-500 text-xs">{t.role}</div>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
+          </motion.div>
 
-            {/* Navigation dots */}
-            <div className="flex justify-center gap-3 mt-8">
-              {testimonials.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActiveTestimonial(i)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                    i === activeTestimonial
-                      ? "bg-[#B8860B] scale-125"
-                      : "bg-[#E8DFC0] hover:bg-[#D4A017]"
-                  }`}
-                />
-              ))}
-            </div>
+          {/* Navigation dots */}
+          <div className="flex justify-center gap-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveTestimonial(index)}
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                  activeTestimonial === index ? "bg-white w-6" : "bg-white/30"
+                }`}
+              />
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── CASE STUDIES ──────────────────────────────────────────────────── */}
-      <section id="case-studies" className="py-24 bg-[#FAFAF7]">
+      {/* ── 7. CASE STUDIES SECTION ─────────────────────────────────── */}
+      <section id="case-studies" className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -695,15 +727,14 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
               Our Work
             </motion.p>
-            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-[#1A1A1A] mb-4">
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
               Case Studies
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
-              Real results for real businesses. See how we&apos;ve helped industry leaders transform
-              their technology infrastructure.
+            <motion.p variants={fadeInUp} className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Real results for real businesses. See how we've transformed enterprise IT operations.
             </motion.p>
           </motion.div>
 
@@ -712,33 +743,50 @@ export default function HomePage() {
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             variants={staggerContainer}
-            className="grid grid-cols-1 lg:grid-cols-3 gap-6"
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
           >
             {caseStudies.map((cs) => (
               <motion.div
                 key={cs.id}
                 variants={fadeInUp}
-                className="bg-white border border-[#E8DFC0] shadow-sm rounded-2xl overflow-hidden group hover:shadow-md transition-all duration-300"
+                className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-all duration-300 group"
               >
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B]">
-                      {cs.category}
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-[#FDF6E3] text-[#B8860B] text-xs font-medium">
+                <div className="relative h-48 overflow-hidden bg-gray-100">
+                  <img
+                    src={cs.image}
+                    alt={cs.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src =
+                        "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80";
+                    }}
+                  />
+                  <div className="absolute top-3 left-3">
+                    <span className="px-3 py-1 rounded-full bg-black text-white text-xs font-semibold">
                       {cs.tag}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold text-[#1A1A1A] mb-3 leading-snug">{cs.title}</h3>
-                  <p className="text-[#6B6B6B] text-sm mb-6 leading-relaxed">{cs.description}</p>
-                  <div className="grid grid-cols-3 gap-3">
+                </div>
+                <div className="p-6">
+                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">
+                    {cs.category}
+                  </p>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 leading-snug">{cs.title}</h3>
+                  <p className="text-gray-600 text-sm mb-5 leading-relaxed">{cs.description}</p>
+                  <div className="grid grid-cols-3 gap-3 mb-5">
                     {cs.metrics.map((m) => (
-                      <div key={m.label} className="text-center p-3 rounded-lg bg-[#FAFAF7] border border-[#E8DFC0]">
-                        <div className="text-xl font-extrabold text-[#B8860B]">{m.value}</div>
-                        <div className="text-xs text-[#6B6B6B] mt-1">{m.label}</div>
+                      <div key={m.label} className="text-center">
+                        <div className="text-xl font-extrabold text-gray-900">{m.value}</div>
+                        <div className="text-xs text-gray-500">{m.label}</div>
                       </div>
                     ))}
                   </div>
+                  <Link
+                    href="#contact"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-black hover:underline"
+                  >
+                    Read full case study <ArrowRight className="w-4 h-4" />
+                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -746,8 +794,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TEAM ──────────────────────────────────────────────────────────── */}
-      <section id="team" className="py-24 bg-white">
+      {/* ── 8. TEAM SECTION ─────────────────────────────────────────── */}
+      <section id="team" className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -756,15 +804,14 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
               Our People
             </motion.p>
-            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-[#1A1A1A] mb-4">
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
               Meet the Leadership Team
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
-              World-class engineers, architects, and strategists united by a passion for
-              technology excellence.
+            <motion.p variants={fadeInUp} className="text-lg text-gray-600 max-w-2xl mx-auto">
+              World-class engineers and strategists with decades of combined enterprise experience.
             </motion.p>
           </motion.div>
 
@@ -778,23 +825,31 @@ export default function HomePage() {
             {teamMembers.map((member) => (
               <motion.div
                 key={member.id}
-                variants={scaleIn}
-                className="bg-[#FAFAF7] border border-[#E8DFC0] shadow-sm rounded-2xl p-6 text-center group hover:shadow-md transition-all duration-300"
+                variants={fadeInUp}
+                className="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300"
               >
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#B8860B] to-[#F5C518] flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 shadow-lg">
+                <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 font-bold text-xl mx-auto mb-4">
                   {member.avatar}
                 </div>
-                <h3 className="font-bold text-[#1A1A1A] text-lg mb-1">{member.name}</h3>
-                <p className="text-sm font-medium text-[#B8860B] mb-3">{member.role}</p>
-                <p className="text-[#6B6B6B] text-sm leading-relaxed">{member.bio}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
+                <p className="text-sm text-gray-600 font-medium mb-3">{member.role}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{member.bio}</p>
+                <div className="flex justify-center gap-3 mt-4">
+                  <button className="text-gray-400 hover:text-black transition-colors">
+                    <Globe className="w-4 h-4" />
+                  </button>
+                  <button className="text-gray-400 hover:text-black transition-colors">
+                    <Mail className="w-4 h-4" />
+                  </button>
+                </div>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* ── FAQ ───────────────────────────────────────────────────────────── */}
-      <section id="faq" className="py-24 bg-[#FAFAF7]">
+      {/* ── 9. FAQ SECTION ──────────────────────────────────────────── */}
+      <section id="faq" className="bg-white py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -803,10 +858,10 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
               FAQ
             </motion.p>
-            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-[#1A1A1A] mb-4">
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
               Frequently Asked Questions
             </motion.h2>
           </motion.div>
@@ -822,24 +877,28 @@ export default function HomePage() {
               <motion.div
                 key={faq.id}
                 variants={fadeInUp}
-                className={`bg-white border shadow-sm rounded-xl overflow-hidden transition-all duration-200 ${
-                  openFaq === faq.id ? "border-[#B8860B]/40" : "border-[#E8DFC0]"
-                }`}
+                className="border border-gray-200 rounded-2xl overflow-hidden"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === faq.id ? null : faq.id)}
-                  className="w-full flex items-center justify-between p-5 text-left"
+                  className="w-full flex items-center justify-between p-6 text-left"
                 >
-                  <span className="font-semibold text-[#1A1A1A] pr-4">{faq.question}</span>
+                  <span
+                    className={`font-semibold text-base ${
+                      openFaq === faq.id ? "text-black" : "text-gray-900"
+                    }`}
+                  >
+                    {faq.question}
+                  </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-[#B8860B] flex-shrink-0 transition-transform duration-200 ${
+                    className={`w-5 h-5 text-black flex-shrink-0 transition-transform duration-300 ${
                       openFaq === faq.id ? "rotate-180" : ""
                     }`}
                   />
                 </button>
                 {openFaq === faq.id && (
-                  <div className="px-5 pb-5">
-                    <p className="text-[#6B6B6B] leading-relaxed">{faq.answer}</p>
+                  <div className="px-6 pb-6">
+                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                   </div>
                 )}
               </motion.div>
@@ -848,8 +907,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CONTACT ───────────────────────────────────────────────────────── */}
-      <section id="contact" className="py-24 bg-white">
+      {/* ── 10. CONTACT SECTION ─────────────────────────────────────── */}
+      <section id="contact" className="bg-black py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -858,122 +917,128 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-3">
               Get In Touch
             </motion.p>
-            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-[#1A1A1A] mb-4">
-              Start Your Transformation
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
+              Let's Build Something Great
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-lg text-[#6B6B6B] max-w-2xl mx-auto">
-              Ready to modernize your IT infrastructure? Let&apos;s talk. Our experts are standing
-              by to provide a free, no-obligation technology audit.
+            <motion.p variants={fadeInUp} className="text-lg text-gray-400 max-w-2xl mx-auto">
+              Ready to transform your IT infrastructure? Get a free audit and discover how we can help.
             </motion.p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Contact Info */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-80px" }}
-              variants={staggerContainer}
-              className="space-y-4"
-            >
-              {[
-                { icon: Mail, label: "Email Us", value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` },
-                { icon: Phone, label: "Call Us", value: CONTACT_PHONE, href: `tel:${CONTACT_PHONE}` },
-                { icon: MapPin, label: "Visit Us", value: CONTACT_ADDRESS, href: "#" },
-              ].map((item) => {
-                const Icon = item.icon;
-                return (
-                  <motion.a
-                    key={item.label}
-                    href={item.href}
-                    variants={fadeInUp}
-                    className="flex gap-4 p-5 rounded-xl bg-[#FAFAF7] border border-[#E8DFC0] hover:border-[#B8860B]/40 transition-all duration-200 group"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-[#FDF6E3] flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-5 h-5 text-[#B8860B]" />
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold uppercase tracking-wider text-[#8B8B8B] mb-1">{item.label}</div>
-                      <div className="text-sm text-[#1A1A1A] font-medium">{item.value}</div>
-                    </div>
-                  </motion.a>
-                );
-              })}
-            </motion.div>
-
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <motion.form
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              variants={fadeInUp}
+              variants={fadeInLeft}
               onSubmit={handleFormSubmit}
-              className="lg:col-span-2 space-y-4"
+              className="space-y-5"
             >
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-sm font-medium text-[#4A4A4A] mb-1.5">Full Name</label>
+                  <label className="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
                   <input
                     type="text"
-                    required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="John Smith"
-                    className="w-full px-4 py-3 rounded-xl bg-white border border-[#E8DFC0] text-[#1A1A1A] placeholder-[#A0A0A0] focus:outline-none focus:border-[#B8860B] transition-colors"
+                    required
+                    className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-[#4A4A4A] mb-1.5">Work Email</label>
+                  <label className="block text-sm font-medium text-gray-300 mb-2">Work Email</label>
                   <input
                     type="email"
-                    required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="john@company.com"
-                    className="w-full px-4 py-3 rounded-xl bg-white border border-[#E8DFC0] text-[#1A1A1A] placeholder-[#A0A0A0] focus:outline-none focus:border-[#B8860B] transition-colors"
+                    required
+                    className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#4A4A4A] mb-1.5">Company</label>
+                <label className="block text-sm font-medium text-gray-300 mb-2">Company</label>
                 <input
                   type="text"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  placeholder="Your Company Name"
-                  className="w-full px-4 py-3 rounded-xl bg-white border border-[#E8DFC0] text-[#1A1A1A] placeholder-[#A0A0A0] focus:outline-none focus:border-[#B8860B] transition-colors"
+                  placeholder="Acme Corporation"
+                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#4A4A4A] mb-1.5">Message</label>
+                <label className="block text-sm font-medium text-gray-300 mb-2">Message</label>
                 <textarea
-                  required
-                  rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="Tell us about your IT challenges and goals..."
-                  className="w-full px-4 py-3 rounded-xl bg-white border border-[#E8DFC0] text-[#1A1A1A] placeholder-[#A0A0A0] focus:outline-none focus:border-[#B8860B] transition-colors resize-none"
+                  placeholder="Tell us about your project or challenge..."
+                  rows={5}
+                  required
+                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors resize-none"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full py-4 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#F5C518] text-white font-semibold text-lg shadow-lg shadow-yellow-600/30 hover:shadow-yellow-600/50 hover:scale-[1.02] active:scale-95 transition-all duration-200 flex items-center justify-center gap-2"
+                className="w-full py-4 rounded-xl bg-white text-black font-semibold text-lg hover:bg-gray-100 transition-colors"
               >
-                Send Message <ArrowRight className="w-5 h-5" />
+                Send Message
               </button>
-              {formSubmitted && (
-                <motion.p
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="text-center text-[#B8860B] font-medium"
-                >
-                  ✓ Message sent! We&apos;ll be in touch within 24 hours.
-                </motion.p>
-              )}
             </motion.form>
+
+            {/* Contact Info */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={fadeInRight}
+              className="space-y-6"
+            >
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">Contact Information</h3>
+                <p className="text-gray-400">
+                  Reach out directly or fill in the form and we'll respond within 24 hours.
+                </p>
+              </div>
+
+              {[
+                { icon: Mail, label: "Email", value: CONTACT_EMAIL },
+                { icon: Phone, label: "Phone", value: CONTACT_PHONE },
+                { icon: MapPin, label: "Office", value: CONTACT_ADDRESS },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="flex items-start gap-4 p-5 rounded-2xl bg-white/10 border border-white/20"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold text-gray-300 mb-1">{item.label}</div>
+                    <div className="text-white">{item.value}</div>
+                  </div>
+                </div>
+              ))}
+
+              <div className="p-5 rounded-2xl bg-white/10 border border-white/20">
+                <h4 className="font-bold text-white mb-3">Office Hours</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Monday – Friday</span>
+                    <span className="text-white">9:00 AM – 6:00 PM EST</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Emergency Support</span>
+                    <span className="text-white">24/7/365</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

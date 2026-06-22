@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Datics.ai | Enterprise Technology Services",
-    template: "%s | Datics.ai",
+    default: "NexaCore IT Solutions | Enterprise Technology Services",
+    template: "%s | NexaCore IT Solutions",
   },
   description:
-    "Datics.ai delivers enterprise-grade cloud infrastructure, cybersecurity, networking, and managed IT services to help businesses scale securely and efficiently.",
+    "NexaCore IT Solutions delivers enterprise-grade cloud infrastructure, cybersecurity, networking, and managed IT services to help businesses scale securely and efficiently.",
   keywords: [
     "IT services",
     "cloud computing",
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     "digital transformation",
     "enterprise technology",
   ],
-  authors: [{ name: "Datics.ai" }],
-  creator: "Datics.ai",
+  authors: [{ name: "NexaCore IT Solutions" }],
+  creator: "NexaCore IT Solutions",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://datics.ai",
-    siteName: "Datics.ai",
-    title: "Datics.ai | Enterprise Technology Services",
+    url: "https://nexacore.io",
+    siteName: "NexaCore IT Solutions",
+    title: "NexaCore IT Solutions | Enterprise Technology Services",
     description:
       "Enterprise-grade cloud, cybersecurity, and managed IT services for modern businesses.",
     images: [
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
         url: "/images/og-nexacore.jpg",
         width: 1200,
         height: 630,
-        alt: "Datics.ai",
+        alt: "NexaCore IT Solutions",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Datics.ai",
+    title: "NexaCore IT Solutions",
     description: "Enterprise-grade IT services for modern businesses.",
   },
   robots: {
@@ -63,7 +63,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="bg-white text-[#1a1a1a] antialiased font-sans">
+      <body className="bg-white text-black antialiased font-sans">
         <Navbar />
         {children}
         <Footer />
