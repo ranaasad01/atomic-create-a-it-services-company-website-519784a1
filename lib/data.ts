@@ -42,7 +42,7 @@ export interface Stat {
 }
 
 export const stats: Stat[] = [
-  { value: "500", label: "Enterprise Clients", suffix: "+" },
+  { value: "500", label: "Enterprise ", suffix: "+" },
   { value: "99.9", label: "Uptime SLA", suffix: "%" },
   { value: "15", label: "Years of Excellence", suffix: "+" },
   { value: "24", label: "Support Coverage", suffix: "/7" },
