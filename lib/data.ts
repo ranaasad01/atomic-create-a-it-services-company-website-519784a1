@@ -1,8 +1,8 @@
-export const APP_NAME = "NexaCore";
-export const APP_FULL_NAME = "NexaCore IT Solutions";
+export const APP_NAME = "Datics.ai";
+export const APP_FULL_NAME = "Datics.ai";
 export const APP_TAGLINE = "Engineering the Future of Enterprise Technology";
 
-export const CONTACT_EMAIL = "hello@nexacore.io";
+export const CONTACT_EMAIL = "hello@datics.ai";
 export const CONTACT_PHONE = "+1 (888) 639-2267";
 export const CONTACT_ADDRESS = "350 Fifth Avenue, Suite 4200, New York, NY 10118";
 
@@ -13,6 +13,7 @@ export interface NavLink {
 
 export const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
+  { label: "Products", href: "/products" },
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
   { label: "Technologies", href: "#technologies" },

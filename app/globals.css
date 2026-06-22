@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-bg: #FFFFFF;
+  --color-bg-secondary: #FAFAF7;
+  --color-gold: #B8860B;
+  --color-gold-light: #D4A017;
+  --color-gold-bright: #F5C518;
+  --color-gold-pale: #FDF6E3;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A4A4A;
+  --color-border: #E8DFC0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
