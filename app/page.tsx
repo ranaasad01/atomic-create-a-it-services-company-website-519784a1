@@ -334,6 +334,7 @@ export default function HomePage() {
             animate="visible"
             variants={fadeInUp}
             className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight mb-6"
+          style={{ color: "#eb0000" }}
           >
             Engineering the Future
             <br />
