@@ -63,7 +63,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="bg-[#0F172A] text-white antialiased font-sans">
+      <body className="bg-white text-[#1a1a1a] antialiased font-sans">
         <Navbar />
         {children}
         <Footer />
