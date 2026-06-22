@@ -365,7 +365,7 @@ export default function HomePage() {
               href="#contact"
               className="px-8 py-4 rounded-xl bg-white text-black font-semibold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:scale-105 active:scale-95"
             >
-              Get a Free Audit
+              Get a Free
             </Link>
             <Link
               href="#services"
