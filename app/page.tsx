@@ -390,8 +390,7 @@ export default function HomePage() {
               >
                 <div className="text-2xl font-bold text-white">
                   {stat.value}
-                  <span className="text-gray-400">{stat.suffix}</span>
-                </div>
+                  <span className="text-gray-400">{stat.suffix}</span>20+</div>
                 <div className="text-xs text-gray-400 mt-1">{stat.label}</div>
               </motion.div>
             ))}
