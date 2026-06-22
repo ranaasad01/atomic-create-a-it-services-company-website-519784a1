@@ -484,7 +484,7 @@ export default function HomePage() {
               viewport={{ once: true, margin: "-80px" }}
               variants={fadeInLeft}
             >
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">About Us</p>
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3" style={{ fontSize: "20px" }}>About Us</p>
               <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
                 We Build Technology That{" "}
                 <span className="text-black font-extrabold">Scales With You</span>
