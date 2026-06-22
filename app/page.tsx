@@ -338,7 +338,7 @@ export default function HomePage() {
           >
             Engineering the Future
             <br />
-            <span className="text-white">
+            <span className="text-white" style={{ color: "#1142d4" }}>
               of Enterprise IT
             </span>
           </motion.h1>
