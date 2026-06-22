@@ -33,8 +33,8 @@ const services = [
     description:
       "Architect, migrate, and manage enterprise-grade cloud environments on AWS, Azure, and GCP with zero-downtime deployments.",
     features: ["Multi-cloud strategy", "Auto-scaling clusters", "Cost optimization", "Disaster recovery"],
-    color: "from-blue-500 to-cyan-400",
-    glow: "shadow-blue-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "security",
@@ -43,8 +43,8 @@ const services = [
     description:
       "Protect your digital assets with end-to-end security frameworks, real-time threat detection, and compliance management.",
     features: ["Zero-trust architecture", "SOC 2 compliance", "Penetration testing", "24/7 threat monitoring"],
-    color: "from-violet-500 to-purple-400",
-    glow: "shadow-violet-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "network",
@@ -53,8 +53,8 @@ const services = [
     description:
       "Design and deploy high-performance, resilient network infrastructure that scales with your business demands.",
     features: ["SD-WAN deployment", "Network segmentation", "Load balancing", "VPN & MPLS"],
-    color: "from-emerald-500 to-teal-400",
-    glow: "shadow-emerald-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "analytics",
@@ -63,8 +63,8 @@ const services = [
     description:
       "Transform raw data into actionable intelligence with our advanced analytics platforms and real-time dashboards.",
     features: ["BI dashboards", "Predictive analytics", "Data warehousing", "ETL pipelines"],
-    color: "from-orange-500 to-amber-400",
-    glow: "shadow-orange-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "devops",
@@ -73,8 +73,8 @@ const services = [
     description:
       "Accelerate software delivery with CI/CD pipelines, infrastructure-as-code, and intelligent automation workflows.",
     features: ["CI/CD pipelines", "Kubernetes orchestration", "IaC with Terraform", "GitOps workflows"],
-    color: "from-pink-500 to-rose-400",
-    glow: "shadow-pink-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
   {
     id: "support",
@@ -83,8 +83,8 @@ const services = [
     description:
       "Round-the-clock expert support with guaranteed SLAs, proactive monitoring, and dedicated account management.",
     features: ["24/7 help desk", "Proactive monitoring", "On-site engineers", "SLA guarantees"],
-    color: "from-sky-500 to-blue-400",
-    glow: "shadow-sky-500/20",
+    color: "bg-black",
+    glow: "shadow-gray-200",
   },
 ];
 
@@ -111,171 +111,173 @@ const caseStudies = [
       "Built a secure, federated data infrastructure enabling real-time patient analytics across 50 hospitals while achieving full HIPAA and SOC 2 compliance.",
     metrics: [
       { label: "Hospitals Connected", value: "50" },
-      { label: "Data Processed Daily", value: "4TB" },
-      { label: "Compliance Score", value: "100%" },
+      { label: "Data Points/Day", value: "10M+" },
+      { label: "Compliance", value: "100%" },
     ],
-    image: "http://www.eitc.org/research-opportunities/photos3/smart-hospitals_120723a",
-    tag: "Security + Analytics",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
+    tag: "Security + Data",
   },
   {
     id: "retail",
     category: "Retail",
-    title: "Zero-downtime migration for a global e-commerce giant",
+    title: "Zero-downtime migration for a global e-commerce platform",
     description:
-      "Migrated a 12-year-old monolithic e-commerce platform to microservices on Kubernetes, achieving zero downtime during peak Black Friday traffic.",
+      "Migrated a 200-node legacy infrastructure to a modern Kubernetes-based platform with zero downtime during peak holiday season.",
     metrics: [
+      { label: "Nodes Migrated", value: "200" },
       { label: "Downtime", value: "0 min" },
-      { label: "Performance Gain", value: "3.4×" },
-      { label: "Deploy Frequency", value: "10×" },
+      { label: "Performance Gain", value: "3.5×" },
     ],
-    image: "https://amsgcorp.net/wp-content/uploads/2024/08/iStock-1426414891.jpg",
-    tag: "Cloud + DevOps",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+    tag: "Cloud + Network",
   },
 ];
 
-const team = [
+const teamMembers = [
   {
     id: "ceo",
     name: "Marcus Chen",
     role: "CEO & Co-Founder",
-    bio: "Former VP of Engineering at AWS. 20+ years building enterprise infrastructure at scale.",
-    image: "https://podcastle.org/wp-content/uploads/2024/09/photo_2024-06-24_16-15-54-660x989.jpg",
-    linkedin: "#",
+    bio: "Former VP of Engineering at AWS with 20+ years in enterprise infrastructure.",
+    avatar: "MC",
   },
   {
     id: "cto",
-    name: "Priya Nair",
-    role: "CTO & Co-Founder",
-    bio: "Ex-Google SRE lead. Architect of systems serving 500M+ daily active users.",
-    image: "https://media.licdn.com/dms/image/v2/D5622AQE3NpM1FP01Yg/feedshare-shrink_800/B56Zf4pvKcGUAg-/0/1752223383746?e=2147483647&v=beta&t=C11dC6M36dpAKpcbBRMtusPrnkgE-cNJfHc93ZNpFoQ",
-    linkedin: "#",
+    name: "Sarah Mitchell",
+    role: "CTO",
+    bio: "Ex-Google SRE lead, architect of systems serving 500M+ daily users.",
+    avatar: "SM",
   },
   {
     id: "cso",
-    name: "James Okafor",
+    name: "David Park",
     role: "Chief Security Officer",
-    bio: "Former NSA cybersecurity analyst. CISSP-certified with 18 years in enterprise security.",
-    image: "https://achiya.org/wp-content/uploads/writers/james-okafor-4d4bc7.webp",
-    linkedin: "#",
+    bio: "15 years in cybersecurity, former NSA consultant and CISSP certified.",
+    avatar: "DP",
   },
   {
     id: "vp",
-    name: "Sofia Reyes",
-    role: "VP of Cloud Architecture",
-    bio: "AWS Solutions Architect Pro. Led 200+ enterprise cloud migrations across 3 continents.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/78/Sof%C3%ADa_Reyes_2016.jpg",
-    linkedin: "#",
+    name: "Priya Sharma",
+    role: "VP of Client Success",
+    bio: "Managed enterprise accounts for Fortune 500 companies across 3 continents.",
+    avatar: "PS",
   },
 ];
 
 const testimonials = [
   {
     id: "t1",
-    name: "David Hartmann",
+    name: "James Whitfield",
     role: "CTO, Meridian Financial",
-    avatar: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/David_Hartman_at_the_Society_of_Experimental_Test_Pilots_Oct_5%2C_2002.jpg/250px-David_Hartman_at_the_Society_of_Experimental_Test_Pilots_Oct_5%2C_2002.jpg",
+    content:
+      "NexaCore transformed our entire cloud infrastructure in under 90 days. The performance gains were immediate and the cost savings exceeded our projections by 40%.",
     rating: 5,
-    quote:
-      "NexaCore transformed our entire infrastructure in 90 days. Their team's depth of knowledge is unmatched — we've seen a 40% reduction in operational overhead since the migration.",
+    avatar: "JW",
   },
   {
     id: "t2",
-    name: "Aisha Patel",
+    name: "Elena Rodriguez",
     role: "VP Engineering, HealthBridge",
-    avatar: "https://static.hudl.com/users/temp/18785842_918b1bb5d7054415a784e4f1eb777f2d.jpg",
+    content:
+      "Their cybersecurity team is world-class. We went from failing audits to achieving SOC 2 Type II certification in just 6 months. Absolutely outstanding.",
     rating: 5,
-    quote:
-      "The cybersecurity audit alone was worth every penny. They identified 23 critical vulnerabilities we had no idea existed. Now we sleep soundly knowing our patient data is protected.",
+    avatar: "ER",
   },
   {
     id: "t3",
-    name: "Robert Kim",
+    name: "Tom Nakamura",
     role: "Director of IT, GlobalRetail Co.",
-    avatar: "https://m.media-amazon.com/images/M/MV5BZjhhNGE0YjctZjI1Yy00YjU4LTgzZTUtZTAxZTI1ZDY5NTQ1XkEyXkFqcGc@._V1_.jpg",
+    content:
+      "The managed support team feels like an extension of our own IT department. 24/7 coverage, proactive alerts, and they've prevented 3 major outages this year alone.",
     rating: 5,
-    quote:
-      "We went from 3-week release cycles to daily deployments. The DevOps transformation NexaCore delivered has fundamentally changed how we ship software.",
+    avatar: "TN",
   },
 ];
 
-const technologies = [
+const techStack = [
   { name: "AWS", category: "Cloud" },
   { name: "Azure", category: "Cloud" },
   { name: "GCP", category: "Cloud" },
   { name: "Kubernetes", category: "DevOps" },
-  { name: "Terraform", category: "DevOps" },
+  { name: "Terraform", category: "IaC" },
   { name: "Docker", category: "DevOps" },
   { name: "Datadog", category: "Monitoring" },
   { name: "Splunk", category: "Security" },
   { name: "CrowdStrike", category: "Security" },
+  { name: "Cisco", category: "Network" },
+  { name: "Palo Alto", category: "Security" },
   { name: "Snowflake", category: "Data" },
-  { name: "Databricks", category: "Data" },
-  { name: "Grafana", category: "Monitoring" },
 ];
 
 const faqs = [
   {
     id: "f1",
-    question: "How long does a typical cloud migration take?",
+    question: "What industries do you specialize in?",
     answer:
-      "Migration timelines vary based on complexity, but most mid-enterprise migrations complete in 60–120 days. We begin with a thorough discovery phase, then execute in parallel workstreams to minimize disruption. Our record is a full 200-server migration completed in 47 days.",
+      "We serve clients across financial services, healthcare, retail, manufacturing, and government sectors. Our team has deep domain expertise in regulated industries with strict compliance requirements.",
   },
   {
     id: "f2",
-    question: "Do you offer ongoing managed services after the initial project?",
+    question: "How quickly can you onboard a new client?",
     answer:
-      "Absolutely. Over 80% of our clients transition to our Managed IT Support tier after initial engagements. We offer flexible plans from basic monitoring to fully managed operations with dedicated account engineers.",
+      "Our standard onboarding takes 2–4 weeks depending on scope. For urgent needs, we offer an expedited 72-hour emergency onboarding for critical infrastructure support.",
   },
   {
     id: "f3",
-    question: "How do you handle compliance requirements like HIPAA, SOC 2, or PCI-DSS?",
+    question: "Do you offer flexible pricing models?",
     answer:
-      "Compliance is built into every engagement from day one. Our security team includes certified compliance specialists for HIPAA, SOC 2 Type II, PCI-DSS, ISO 27001, and GDPR. We've helped 150+ organizations achieve and maintain certification.",
+      "Yes. We offer monthly retainers, project-based pricing, and hybrid models. All engagements start with a free audit so we can scope the work accurately before any commitment.",
   },
   {
     id: "f4",
-    question: "What is your SLA for critical incident response?",
+    question: "What does your SLA guarantee cover?",
     answer:
-      "Our Platinum support tier guarantees a 15-minute response time for P1 critical incidents, 24/7/365. Standard support offers 1-hour P1 response. All SLAs are contractually backed with financial penalties if we miss targets.",
+      "Our SLAs cover uptime, response times, and resolution times. We guarantee 99.9% uptime for managed services, with 15-minute response times for P1 incidents and financial penalties if we miss targets.",
   },
   {
     id: "f5",
-    question: "Can you work with our existing in-house IT team?",
+    question: "Can you work with our existing IT team?",
     answer:
-      "Yes — we operate as an extension of your team, not a replacement. We offer co-managed models where we handle specific domains (e.g., cloud ops or security) while your team retains ownership of others. Knowledge transfer is a core part of every engagement.",
+      "Absolutely. We operate as a seamless extension of your internal team. We integrate with your existing tools, workflows, and communication channels to minimize disruption.",
   },
 ];
 
-const valueProps = [
+const whyChooseUs = [
   {
+    id: "w1",
+    icon: Award,
+    title: "Certified Experts",
+    description: "Our engineers hold 200+ certifications across AWS, Azure, GCP, Cisco, and more.",
+  },
+  {
+    id: "w2",
     icon: Zap,
-    title: "Rapid Deployment",
-    description: "From kickoff to production in weeks, not months. Our battle-tested playbooks eliminate guesswork.",
+    title: "Lightning Fast Delivery",
+    description: "We move fast without breaking things. Most projects go live 30% ahead of schedule.",
   },
   {
-    icon: Globe,
-    title: "Global Reach",
-    description: "Operations across 4 continents with regional data centers ensuring low-latency performance worldwide.",
-  },
-  {
+    id: "w3",
     icon: Lock,
-    title: "Security-First",
-    description: "Every solution is architected with zero-trust principles and continuous compliance monitoring baked in.",
+    title: "Security-First Approach",
+    description: "Every solution is architected with security baked in from day one, not bolted on.",
   },
   {
-    icon: Server,
-    title: "Enterprise Scale",
-    description: "Infrastructure designed to handle millions of requests per second without breaking a sweat.",
+    id: "w4",
+    icon: TrendingUp,
+    title: "Proven ROI",
+    description: "Our clients see an average 3.2× ROI within the first year of engagement.",
   },
   {
+    id: "w5",
+    icon: Globe,
+    title: "Global Coverage",
+    description: "With engineers across 12 time zones, we provide truly round-the-clock support.",
+  },
+  {
+    id: "w6",
     icon: Users,
     title: "Dedicated Teams",
-    description: "Named engineers, not ticket queues. Your dedicated pod knows your stack inside and out.",
-  },
-  {
-    icon: Award,
-    title: "Proven Track Record",
-    description: "500+ enterprise clients, 15 years of excellence, and a 97% client retention rate speak for themselves.",
+    description: "You get a named account manager and dedicated pod — not a ticket queue.",
   },
 ];
 
@@ -283,157 +285,138 @@ const valueProps = [
 
 export default function HomePage() {
   const [openFaq, setOpenFaq] = useState<string | null>(null);
+  const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
     message: "",
-    service: "",
   });
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
-  const handleFormChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSubmitted(true);
-  };
-
-  const toggleFaq = (id: string) => {
-    setOpenFaq((prev) => (prev === id ? null : id));
+    alert("Thanks! We'll be in touch within 24 hours.");
+    setFormData({ name: "", email: "", company: "", message: "" });
   };
 
   return (
-    <main className="bg-[#0F172A] text-white overflow-x-hidden">
-      {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#060D1F] via-[#0F172A] to-[#0F1F3D]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(56,189,248,0.15),transparent)]" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-400/8 rounded-full blur-3xl" />
+    <main className="overflow-x-hidden">
 
-        {/* Grid pattern */}
+      {/* ── 1. HERO SECTION ─────────────────────────────────────────── */}
+      <section className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden">
+        {/* Background grid pattern */}
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
+              "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
+        {/* Subtle radial gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+          {/* Badge */}
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8"
+          >
+            <Sparkles className="w-4 h-4" />
+            Trusted by 500+ Enterprise Clients
+          </motion.div>
+
+          {/* Headline */}
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight mb-6"
+          >
+            Engineering the Future
+            <br />
+            <span className="text-white">
+              of Enterprise IT
+            </span>
+          </motion.h1>
+
+          {/* Subheadline */}
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed"
+          >
+            {APP_FULL_NAME} delivers cloud infrastructure, cybersecurity, and managed IT
+            services that help enterprises scale securely and efficiently.
+          </motion.p>
+
+          {/* CTA Buttons */}
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
+          >
+            <Link
+              href="#contact"
+              className="px-8 py-4 rounded-xl bg-white text-black font-semibold text-lg hover:bg-gray-100 transition-all duration-200 shadow-lg hover:scale-105 active:scale-95"
+            >
+              Get a Free Audit
+            </Link>
+            <Link
+              href="#services"
+              className="px-8 py-4 rounded-xl border border-white text-white font-semibold text-lg hover:bg-white hover:text-black transition-all duration-200"
+            >
+              Explore Services
+            </Link>
+          </motion.div>
+
+          {/* Floating Stat Cards */}
           <motion.div
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="flex flex-col items-center"
+            className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto"
           >
-            {/* Badge */}
-            <motion.div variants={fadeInUp} className="mb-6">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/20 text-[#38BDF8] text-sm font-medium">
-                <Sparkles className="w-4 h-4" />
-                Trusted by 500+ Enterprise Clients Worldwide
-              </span>
-            </motion.div>
-
-            {/* Headline */}
-            <motion.h1
-              variants={fadeInUp}
-              className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] mb-6 max-w-5xl"
-            >
-              <span className="text-white">Engineering the</span>
-              <br />
-              <span className="bg-gradient-to-r from-[#38BDF8] via-[#60A5FA] to-[#818CF8] bg-clip-text text-transparent">
-                Future of Enterprise
-              </span>
-              <br />
-              <span className="text-white">Technology</span>
-            </motion.h1>
-
-            {/* Subheadline */}
-            <motion.p
-              variants={fadeInUp}
-              className="text-lg sm:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed"
-            >
-              {APP_FULL_NAME} delivers cloud infrastructure, cybersecurity, and
-              managed IT solutions that scale with your ambitions — backed by
-              15 years of enterprise excellence.
-            </motion.p>
-
-            {/* CTAs */}
-            <motion.div
-              variants={fadeInUp}
-              className="flex flex-col sm:flex-row gap-4 mb-16"
-            >
-              <motion.a
-                href="#contact"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#1E40AF] to-[#38BDF8] text-white font-semibold text-base shadow-xl shadow-blue-500/30 hover:shadow-blue-500/50 transition-shadow flex items-center gap-2 justify-center"
+            {stats.map((stat) => (
+              <motion.div
+                key={stat.label}
+                variants={scaleIn}
+                className="bg-black/80 border border-white/20 rounded-2xl p-4 backdrop-blur-sm"
               >
-                Get a Free IT Audit <ArrowRight className="w-5 h-5" />
-              </motion.a>
-              <motion.a
-                href="#case-studies"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="px-8 py-4 rounded-xl bg-white/5 border border-white/10 text-white font-semibold text-base hover:bg-white/10 transition-colors flex items-center gap-2 justify-center"
-              >
-                View Case Studies
-              </motion.a>
-            </motion.div>
+                <div className="text-2xl font-bold text-white">
+                  {stat.value}
+                  <span className="text-gray-400">{stat.suffix}</span>
+                </div>
+                <div className="text-xs text-gray-400 mt-1">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
 
-            {/* Stats */}
+          {/* Scroll Indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50"
+          >
+            <span className="text-xs uppercase tracking-widest">Scroll</span>
             <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              animate="visible"
-              className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl"
+              animate={{ y: [0, 8, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
             >
-              {(stats ?? []).map((stat) => (
-                <motion.div
-                  key={stat.label}
-                  variants={scaleIn}
-                  className="bg-white/5 border border-white/10 rounded-2xl p-5 text-center backdrop-blur-sm"
-                >
-                  <div className="text-3xl font-extrabold text-white mb-1">
-                    {stat.value}
-                    <span className="text-[#38BDF8]">{stat.suffix ?? ""}</span>
-                  </div>
-                  <div className="text-slate-400 text-sm">{stat.label}</div>
-                </motion.div>
-              ))}
+              <ChevronDown className="w-5 h-5" />
             </motion.div>
           </motion.div>
         </div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500"
-        >
-          <span className="text-xs uppercase tracking-widest">Scroll</span>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-          >
-            <ChevronDown className="w-5 h-5" />
-          </motion.div>
-        </motion.div>
       </section>
 
-      {/* ── SERVICES ─────────────────────────────────────────────────────── */}
-      <section id="services" className="py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A] via-[#0A1628] to-[#0F172A]" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── 2. SERVICES SECTION ─────────────────────────────────────── */}
+      <section id="services" className="bg-white py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -441,24 +424,14 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.span
-              variants={fadeInUp}
-              className="inline-block px-4 py-1.5 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/20 text-[#38BDF8] text-sm font-medium mb-4"
-            >
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
               What We Do
-            </motion.span>
-            <motion.h2
-              variants={fadeInUp}
-              className="text-4xl lg:text-5xl font-extrabold text-white mb-4"
-            >
-              End-to-End IT Services
+            </motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-black mb-4">
+              Enterprise IT Services
             </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-slate-400 text-lg max-w-2xl mx-auto"
-            >
-              From cloud architecture to 24/7 managed support, we cover every
-              layer of your technology stack so you can focus on what matters.
+            <motion.p variants={fadeInUp} className="text-lg text-gray-600 max-w-2xl mx-auto">
+              End-to-end technology solutions designed to accelerate growth, reduce risk, and maximize operational efficiency.
             </motion.p>
           </motion.div>
 
@@ -469,189 +442,184 @@ export default function HomePage() {
             variants={staggerContainer}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {services.map((service) => {
-              const Icon = service.icon;
-              return (
-                <motion.div
-                  key={service.id}
-                  variants={fadeInUp}
-                  whileHover={{ y: -6, scale: 1.01 }}
-                  className={`group relative bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:border-white/20 transition-all duration-300 hover:shadow-2xl hover:${service.glow}`}
+            {services.map((service) => (
+              <motion.div
+                key={service.id}
+                variants={fadeInUp}
+                className="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-black hover:shadow-md shadow-sm transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-xl bg-black flex items-center justify-center mb-4">
+                  <service.icon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed">{service.description}</p>
+                <ul className="space-y-2 mb-4">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-2 text-sm text-gray-700">
+                      <CheckCircle className="w-4 h-4 text-black flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center gap-1 text-sm font-semibold text-black hover:underline"
                 >
-                  <div
-                    className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-5 shadow-lg`}
-                  >
-                    <Icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-5">
-                    {service.description}
-                  </p>
-                  <ul className="space-y-2">
-                    {(service.features ?? []).map((feat) => (
-                      <li
-                        key={feat}
-                        className="flex items-center gap-2 text-sm text-slate-300"
-                      >
-                        <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                        {feat}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none" />
-                </motion.div>
-              );
-            })}
+                  Learn more <ArrowRight className="w-4 h-4" />
+                </Link>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>
 
-      {/* ── ABOUT / VALUE PROPS ──────────────────────────────────────────── */}
-      <section id="about" className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#060D1F]" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/5 rounded-full blur-3xl" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* About intro */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
+      {/* ── 3. ABOUT / WHY CHOOSE US SECTION ────────────────────────── */}
+      <section id="about" className="bg-gray-50 py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+            {/* Left: Text */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
               variants={fadeInLeft}
             >
-              <span className="inline-block px-4 py-1.5 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/20 text-[#38BDF8] text-sm font-medium mb-4">
-                About NexaCore
-              </span>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
-                Built by engineers,{" "}
-                <span className="bg-gradient-to-r from-[#38BDF8] to-[#818CF8] bg-clip-text text-transparent">
-                  for enterprises
-                </span>
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">About Us</p>
+              <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                We Build Technology That{" "}
+                <span className="text-black font-extrabold">Scales With You</span>
               </h2>
-              <p className="text-slate-400 text-lg leading-relaxed mb-6">
-                Founded in 2009 by former AWS and Google engineers, NexaCore was
-                built on a single conviction: enterprise technology should be
-                resilient, secure, and a competitive advantage — not a liability.
+              <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                Founded in 2009, {APP_FULL_NAME} has grown from a boutique IT consultancy to a
+                full-service enterprise technology partner trusted by Fortune 500 companies worldwide.
               </p>
-              <p className="text-slate-400 text-lg leading-relaxed mb-8">
-                Today, we serve 500+ clients across financial services,
-                healthcare, retail, and manufacturing — managing over $2B in
-                cloud infrastructure and protecting more than 4 million
-                endpoints globally.
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Our mission is simple: <span className="text-black font-semibold">eliminate technology friction</span> so
+                your business can focus on what matters most. We combine deep technical expertise with
+                a client-first approach to deliver solutions that actually work.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 text-slate-300">
-                  <TrendingUp className="w-5 h-5 text-[#38BDF8]" />
-                  <span className="text-sm">97% client retention rate</span>
-                </div>
-                <div className="flex items-center gap-2 text-slate-300">
-                  <Award className="w-5 h-5 text-[#38BDF8]" />
-                  <span className="text-sm">Gartner Magic Quadrant Leader</span>
-                </div>
-                <div className="flex items-center gap-2 text-slate-300">
-                  <Shield className="w-5 h-5 text-[#38BDF8]" />
-                  <span className="text-sm">ISO 27001 Certified</span>
-                </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="#contact"
+                  className="px-6 py-3 rounded-xl bg-black text-white font-semibold hover:bg-gray-800 transition-colors"
+                >
+                  Work With Us
+                </Link>
+                <Link
+                  href="#case-studies"
+                  className="px-6 py-3 rounded-xl border border-gray-200 text-gray-900 font-semibold hover:border-black transition-colors"
+                >
+                  View Case Studies
+                </Link>
               </div>
             </motion.div>
 
+            {/* Right: Feature Grid */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              variants={fadeInRight}
-              className="relative"
+              variants={staggerContainer}
+              className="grid grid-cols-2 gap-4"
             >
-              <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl shadow-black/40">
-                <img
-                  src="http://www.nexacore.sg/assets/images/network-operations.jpg"
-                  alt="NexaCore operations center"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#060D1F]/60 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse" />
-                      <span className="text-white text-sm font-medium">
-                        All systems operational — 99.99% uptime this quarter
-                      </span>
-                    </div>
+              {[
+                { icon: Server, label: "Cloud-Native", desc: "Built for modern infrastructure" },
+                { icon: Shield, label: "Security-First", desc: "Zero-trust by default" },
+                { icon: Zap, label: "High Performance", desc: "Sub-100ms response times" },
+                { icon: Users, label: "Expert Team", desc: "200+ certified engineers" },
+              ].map((item) => (
+                <motion.div
+                  key={item.label}
+                  variants={scaleIn}
+                  className="bg-white border border-gray-200 rounded-2xl p-5"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-black flex items-center justify-center mb-3">
+                    <item.icon className="w-5 h-5 text-white" />
                   </div>
-                </div>
-              </div>
-              {/* Floating badge */}
-              <div className="absolute -top-4 -right-4 bg-gradient-to-br from-[#1E40AF] to-[#38BDF8] rounded-2xl p-4 shadow-xl shadow-blue-500/30">
-                <div className="text-2xl font-extrabold text-white">15+</div>
-                <div className="text-blue-100 text-xs">Years of Excellence</div>
-              </div>
+                  <h4 className="font-bold text-gray-900 mb-1">{item.label}</h4>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
 
-          {/* Value props grid */}
+          {/* Why Choose Us */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             variants={staggerContainer}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {valueProps.map((vp) => {
-              const Icon = vp.icon;
-              return (
+            <motion.div variants={fadeInUp} className="text-center mb-12">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">Why Choose Us</p>
+              <h2 className="text-4xl font-extrabold text-gray-900">The {APP_NAME} Difference</h2>
+            </motion.div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {whyChooseUs.map((item) => (
                 <motion.div
-                  key={vp.title}
+                  key={item.id}
                   variants={fadeInUp}
-                  whileHover={{ y: -4 }}
-                  className="flex gap-4 p-6 rounded-2xl bg-white/[0.03] border border-white/8 hover:border-white/15 transition-all duration-300"
+                  className="bg-white border border-gray-200 rounded-2xl p-6"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-[#38BDF8]/10 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-5 h-5 text-[#38BDF8]" />
+                  <div className="w-12 h-12 rounded-xl bg-black flex items-center justify-center mb-4">
+                    <item.icon className="w-6 h-6 text-white" />
                   </div>
-                  <div>
-                    <h3 className="text-white font-semibold mb-1">{vp.title}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">
-                      {vp.description}
-                    </p>
-                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
                 </motion.div>
-              );
-            })}
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* ── TECHNOLOGIES ─────────────────────────────────────────────────── */}
-      <section id="technologies" className="py-24 relative">
-        <div className="absolute inset-0 bg-[#0F172A]" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── 4. STATS SECTION ────────────────────────────────────────── */}
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             variants={staggerContainer}
-            className="text-center mb-14"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-8"
           >
-            <motion.span
-              variants={fadeInUp}
-              className="inline-block px-4 py-1.5 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/20 text-[#38BDF8] text-sm font-medium mb-4"
-            >
+            {stats.map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                variants={fadeInUp}
+                className={`text-center ${
+                  index < stats.length - 1 ? "lg:border-r border-white/20" : ""
+                }`}
+              >
+                <div className="text-4xl sm:text-5xl font-extrabold text-white mb-2">
+                  {stat.value}
+                  <span className="text-gray-400">{stat.suffix}</span>
+                </div>
+                <div className="text-gray-400 font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── 5. TECH STACK SECTION ───────────────────────────────────── */}
+      <section id="technologies" className="bg-gray-50 py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={staggerContainer}
+            className="text-center mb-16"
+          >
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
               Our Stack
-            </motion.span>
-            <motion.h2
-              variants={fadeInUp}
-              className="text-4xl lg:text-5xl font-extrabold text-white mb-4"
-            >
-              Best-in-Class Technologies
+            </motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+              Technologies We Master
             </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-slate-400 text-lg max-w-xl mx-auto"
-            >
-              We partner with the world's leading technology vendors to deliver
-              solutions that are proven, scalable, and future-proof.
+            <motion.p variants={fadeInUp} className="text-lg text-gray-600 max-w-2xl mx-auto">
+              We work with the industry's leading platforms and tools to deliver best-in-class solutions.
             </motion.p>
           </motion.div>
 
@@ -660,31 +628,28 @@ export default function HomePage() {
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             variants={staggerContainer}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
+            className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4"
           >
-            {technologies.map((tech) => (
+            {techStack.map((tech) => (
               <motion.div
                 key={tech.name}
                 variants={scaleIn}
-                whileHover={{ scale: 1.06, y: -3 }}
-                className="flex flex-col items-center gap-2 p-5 rounded-2xl bg-white/[0.03] border border-white/8 hover:border-[#38BDF8]/30 hover:bg-[#38BDF8]/5 transition-all duration-300 cursor-default"
+                className="bg-white border border-gray-200 hover:border-black rounded-2xl p-4 text-center shadow-sm hover:shadow-md transition-all duration-300 group"
               >
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-slate-700 to-slate-600 flex items-center justify-center">
-                  <Server className="w-5 h-5 text-slate-300" />
+                <div className="w-10 h-10 rounded-lg bg-black flex items-center justify-center mx-auto mb-3">
+                  <Server className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-white text-sm font-semibold">{tech.name}</span>
-                <span className="text-slate-500 text-xs">{tech.category}</span>
+                <div className="text-sm font-semibold text-gray-700">{tech.name}</div>
+                <div className="text-xs text-gray-500 mt-1">{tech.category}</div>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* ── CASE STUDIES ─────────────────────────────────────────────────── */}
-      <section id="case-studies" className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#060D1F]" />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-violet-600/5 rounded-full blur-3xl" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── 6. TESTIMONIALS SECTION ─────────────────────────────────── */}
+      <section className="bg-black py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -692,24 +657,84 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.span
-              variants={fadeInUp}
-              className="inline-block px-4 py-1.5 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/20 text-[#38BDF8] text-sm font-medium mb-4"
-            >
-              Case Studies
-            </motion.span>
-            <motion.h2
-              variants={fadeInUp}
-              className="text-4xl lg:text-5xl font-extrabold text-white mb-4"
-            >
-              Results That Speak for Themselves
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-3">
+              Client Stories
+            </motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
+              Trusted by Industry Leaders
             </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-slate-400 text-lg max-w-2xl mx-auto"
-            >
-              Real transformations, measurable outcomes. See how we've helped
-              industry leaders modernize their technology infrastructure.
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={staggerContainer}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10"
+          >
+            {testimonials.map((t, index) => (
+              <motion.div
+                key={t.id}
+                variants={fadeInUp}
+                onClick={() => setActiveTestimonial(index)}
+                className={`bg-white border rounded-2xl p-6 cursor-pointer transition-all duration-300 ${
+                  activeTestimonial === index
+                    ? "border-white shadow-lg shadow-white/10"
+                    : "border-gray-200 hover:border-gray-400"
+                }`}
+              >
+                <div className="flex gap-1 mb-4">
+                  {Array.from({ length: t.rating }).map((_, i) => (
+                    <Star key={i} className="w-4 h-4 text-black fill-black" />
+                  ))}
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed mb-6">&ldquo;{t.content}&rdquo;</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 font-bold text-sm">
+                    {t.avatar}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900 text-sm">{t.name}</div>
+                    <div className="text-gray-500 text-xs">{t.role}</div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Navigation dots */}
+          <div className="flex justify-center gap-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveTestimonial(index)}
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                  activeTestimonial === index ? "bg-white w-6" : "bg-white/30"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 7. CASE STUDIES SECTION ─────────────────────────────────── */}
+      <section id="case-studies" className="bg-white py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={staggerContainer}
+            className="text-center mb-16"
+          >
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
+              Our Work
+            </motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+              Case Studies
+            </motion.h2>
+            <motion.p variants={fadeInUp} className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Real results for real businesses. See how we've transformed enterprise IT operations.
             </motion.p>
           </motion.div>
 
@@ -724,49 +749,44 @@ export default function HomePage() {
               <motion.div
                 key={cs.id}
                 variants={fadeInUp}
-                whileHover={{ y: -6 }}
-                className="group bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:shadow-2xl hover:shadow-black/40"
+                className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-all duration-300 group"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 overflow-hidden bg-gray-100">
                   <img
                     src={cs.image}
                     alt={cs.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src =
+                        "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80";
+                    }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#060D1F] via-transparent to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full bg-[#38BDF8]/20 border border-[#38BDF8]/30 text-[#38BDF8] text-xs font-medium">
+                  <div className="absolute top-3 left-3">
+                    <span className="px-3 py-1 rounded-full bg-black text-white text-xs font-semibold">
                       {cs.tag}
-                    </span>
-                  </div>
-                  <div className="absolute bottom-4 left-4">
-                    <span className="text-slate-400 text-xs font-medium uppercase tracking-wider">
-                      {cs.category}
                     </span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-white font-bold text-lg mb-3 leading-snug">
-                    {cs.title}
-                  </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                    {cs.description}
+                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">
+                    {cs.category}
                   </p>
-                  <div className="grid grid-cols-3 gap-3">
-                    {(cs.metrics ?? []).map((m) => (
-                      <div
-                        key={m.label}
-                        className="text-center p-3 rounded-xl bg-white/5 border border-white/8"
-                      >
-                        <div className="text-[#38BDF8] font-extrabold text-lg">
-                          {m.value}
-                        </div>
-                        <div className="text-slate-500 text-xs mt-0.5">
-                          {m.label}
-                        </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 leading-snug">{cs.title}</h3>
+                  <p className="text-gray-600 text-sm mb-5 leading-relaxed">{cs.description}</p>
+                  <div className="grid grid-cols-3 gap-3 mb-5">
+                    {cs.metrics.map((m) => (
+                      <div key={m.label} className="text-center">
+                        <div className="text-xl font-extrabold text-gray-900">{m.value}</div>
+                        <div className="text-xs text-gray-500">{m.label}</div>
                       </div>
                     ))}
                   </div>
+                  <Link
+                    href="#contact"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-black hover:underline"
+                  >
+                    Read full case study <ArrowRight className="w-4 h-4" />
+                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -774,11 +794,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 bg-[#0F172A]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-600/5 rounded-full blur-3xl" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── 8. TEAM SECTION ─────────────────────────────────────────── */}
+      <section id="team" className="bg-gray-50 py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -786,93 +804,14 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.span
-              variants={fadeInUp}
-              className="inline-block px-4 py-1.5 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/20 text-[#38BDF8] text-sm font-medium mb-4"
-            >
-              Client Testimonials
-            </motion.span>
-            <motion.h2
-              variants={fadeInUp}
-              className="text-4xl lg:text-5xl font-extrabold text-white mb-4"
-            >
-              Trusted by Industry Leaders
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
+              Our People
+            </motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+              Meet the Leadership Team
             </motion.h2>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          >
-            {testimonials.map((t) => (
-              <motion.div
-                key={t.id}
-                variants={fadeInUp}
-                whileHover={{ y: -4 }}
-                className="bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:border-white/20 transition-all duration-300"
-              >
-                <div className="flex gap-1 mb-5">
-                  {Array.from({ length: t.rating }).map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-4 h-4 text-amber-400 fill-amber-400"
-                    />
-                  ))}
-                </div>
-                <p className="text-slate-300 text-sm leading-relaxed mb-6 italic">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <img
-                    src={t.avatar}
-                    alt={t.name}
-                    className="w-10 h-10 rounded-full object-cover border border-white/10"
-                  />
-                  <div>
-                    <div className="text-white font-semibold text-sm">
-                      {t.name}
-                    </div>
-                    <div className="text-slate-500 text-xs">{t.role}</div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ── TEAM ─────────────────────────────────────────────────────────── */}
-      <section id="team" className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#060D1F]" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={staggerContainer}
-            className="text-center mb-16"
-          >
-            <motion.span
-              variants={fadeInUp}
-              className="inline-block px-4 py-1.5 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/20 text-[#38BDF8] text-sm font-medium mb-4"
-            >
-              Leadership
-            </motion.span>
-            <motion.h2
-              variants={fadeInUp}
-              className="text-4xl lg:text-5xl font-extrabold text-white mb-4"
-            >
-              Meet the Team
-            </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-slate-400 text-lg max-w-xl mx-auto"
-            >
-              World-class engineers and strategists who've built and secured
-              some of the most complex systems on the planet.
+            <motion.p variants={fadeInUp} className="text-lg text-gray-600 max-w-2xl mx-auto">
+              World-class engineers and strategists with decades of combined enterprise experience.
             </motion.p>
           </motion.div>
 
@@ -883,29 +822,25 @@ export default function HomePage() {
             variants={staggerContainer}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
           >
-            {team.map((member) => (
+            {teamMembers.map((member) => (
               <motion.div
                 key={member.id}
                 variants={fadeInUp}
-                whileHover={{ y: -6 }}
-                className="group bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300"
+                className="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:shadow-md transition-all duration-300"
               >
-                <div className="relative h-56 overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#060D1F] via-transparent to-transparent" />
+                <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 font-bold text-xl mx-auto mb-4">
+                  {member.avatar}
                 </div>
-                <div className="p-5">
-                  <h3 className="text-white font-bold text-lg">{member.name}</h3>
-                  <p className="text-[#38BDF8] text-sm font-medium mb-3">
-                    {member.role}
-                  </p>
-                  <p className="text-slate-400 text-sm leading-relaxed">
-                    {member.bio}
-                  </p>
+                <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
+                <p className="text-sm text-gray-600 font-medium mb-3">{member.role}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{member.bio}</p>
+                <div className="flex justify-center gap-3 mt-4">
+                  <button className="text-gray-400 hover:text-black transition-colors">
+                    <Globe className="w-4 h-4" />
+                  </button>
+                  <button className="text-gray-400 hover:text-black transition-colors">
+                    <Mail className="w-4 h-4" />
+                  </button>
                 </div>
               </motion.div>
             ))}
@@ -913,35 +848,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-      <section id="faq" className="py-24 relative">
-        <div className="absolute inset-0 bg-[#0F172A]" />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── 9. FAQ SECTION ──────────────────────────────────────────── */}
+      <section id="faq" className="bg-white py-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             variants={staggerContainer}
-            className="text-center mb-14"
+            className="text-center mb-16"
           >
-            <motion.span
-              variants={fadeInUp}
-              className="inline-block px-4 py-1.5 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/20 text-[#38BDF8] text-sm font-medium mb-4"
-            >
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">
               FAQ
-            </motion.span>
-            <motion.h2
-              variants={fadeInUp}
-              className="text-4xl lg:text-5xl font-extrabold text-white mb-4"
-            >
-              Common Questions
-            </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-slate-400 text-lg"
-            >
-              Everything you need to know before starting your IT transformation.
             </motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </motion.h2>
           </motion.div>
 
           <motion.div
@@ -955,48 +877,39 @@ export default function HomePage() {
               <motion.div
                 key={faq.id}
                 variants={fadeInUp}
-                className="bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden"
+                className="border border-gray-200 rounded-2xl overflow-hidden"
               >
                 <button
-                  onClick={() => toggleFaq(faq.id)}
-                  className="w-full flex items-center justify-between p-6 text-left hover:bg-white/[0.02] transition-colors"
+                  onClick={() => setOpenFaq(openFaq === faq.id ? null : faq.id)}
+                  className="w-full flex items-center justify-between p-6 text-left"
                 >
-                  <span className="text-white font-semibold pr-4">
+                  <span
+                    className={`font-semibold text-base ${
+                      openFaq === faq.id ? "text-black" : "text-gray-900"
+                    }`}
+                  >
                     {faq.question}
                   </span>
-                  <motion.div
-                    animate={{ rotate: openFaq === faq.id ? 180 : 0 }}
-                    transition={{ duration: 0.25 }}
-                    className="flex-shrink-0"
-                  >
-                    <ChevronDown className="w-5 h-5 text-slate-400" />
-                  </motion.div>
+                  <ChevronDown
+                    className={`w-5 h-5 text-black flex-shrink-0 transition-transform duration-300 ${
+                      openFaq === faq.id ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
-                <motion.div
-                  initial={false}
-                  animate={{
-                    height: openFaq === faq.id ? "auto" : 0,
-                    opacity: openFaq === faq.id ? 1 : 0,
-                  }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="overflow-hidden"
-                >
-                  <div className="px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
-                    {faq.answer}
+                {openFaq === faq.id && (
+                  <div className="px-6 pb-6">
+                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                   </div>
-                </motion.div>
+                )}
               </motion.div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* ── CONTACT ──────────────────────────────────────────────────────── */}
-      <section id="contact" className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#060D1F]" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-cyan-400/5 rounded-full blur-3xl" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── 10. CONTACT SECTION ─────────────────────────────────────── */}
+      <section id="contact" className="bg-black py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -1004,300 +917,129 @@ export default function HomePage() {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.span
-              variants={fadeInUp}
-              className="inline-block px-4 py-1.5 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/20 text-[#38BDF8] text-sm font-medium mb-4"
-            >
-              Get in Touch
-            </motion.span>
-            <motion.h2
-              variants={fadeInUp}
-              className="text-4xl lg:text-5xl font-extrabold text-white mb-4"
-            >
-              Start Your IT Transformation
+            <motion.p variants={fadeInUp} className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-3">
+              Get In Touch
+            </motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
+              Let's Build Something Great
             </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-slate-400 text-lg max-w-xl mx-auto"
-            >
-              Book a free 60-minute IT audit with one of our senior architects.
-              No sales pitch — just honest, expert advice.
+            <motion.p variants={fadeInUp} className="text-lg text-gray-400 max-w-2xl mx-auto">
+              Ready to transform your IT infrastructure? Get a free audit and discover how we can help.
             </motion.p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <motion.form
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={fadeInLeft}
+              onSubmit={handleFormSubmit}
+              className="space-y-5"
+            >
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+                  <input
+                    type="text"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    placeholder="John Smith"
+                    required
+                    className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-2">Work Email</label>
+                  <input
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    placeholder="john@company.com"
+                    required
+                    className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-300 mb-2">Company</label>
+                <input
+                  type="text"
+                  value={formData.company}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                  placeholder="Acme Corporation"
+                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                <textarea
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  placeholder="Tell us about your project or challenge..."
+                  rows={5}
+                  required
+                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors resize-none"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full py-4 rounded-xl bg-white text-black font-semibold text-lg hover:bg-gray-100 transition-colors"
+              >
+                Send Message
+              </button>
+            </motion.form>
+
             {/* Contact Info */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              variants={fadeInLeft}
-              className="space-y-8"
+              variants={fadeInRight}
+              className="space-y-6"
             >
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">
-                  Let&apos;s talk about your challenges
-                </h3>
-                <p className="text-slate-400 leading-relaxed">
-                  Whether you&apos;re planning a cloud migration, dealing with a
-                  security incident, or simply want to modernize your
-                  infrastructure — our team is ready to help.
+                <h3 className="text-2xl font-bold text-white mb-2">Contact Information</h3>
+                <p className="text-gray-400">
+                  Reach out directly or fill in the form and we'll respond within 24 hours.
                 </p>
               </div>
 
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#38BDF8]/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-5 h-5 text-[#38BDF8]" />
+              {[
+                { icon: Mail, label: "Email", value: CONTACT_EMAIL },
+                { icon: Phone, label: "Phone", value: CONTACT_PHONE },
+                { icon: MapPin, label: "Office", value: CONTACT_ADDRESS },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="flex items-start gap-4 p-5 rounded-2xl bg-white/10 border border-white/20"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <div className="text-slate-400 text-sm mb-0.5">Email</div>
-                    <a
-                      href={`mailto:${CONTACT_EMAIL}`}
-                      className="text-white font-medium hover:text-[#38BDF8] transition-colors"
-                    >
-                      {CONTACT_EMAIL}
-                    </a>
+                    <div className="text-sm font-semibold text-gray-300 mb-1">{item.label}</div>
+                    <div className="text-white">{item.value}</div>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#38BDF8]/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-[#38BDF8]" />
+              ))}
+
+              <div className="p-5 rounded-2xl bg-white/10 border border-white/20">
+                <h4 className="font-bold text-white mb-3">Office Hours</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Monday – Friday</span>
+                    <span className="text-white">9:00 AM – 6:00 PM EST</span>
                   </div>
-                  <div>
-                    <div className="text-slate-400 text-sm mb-0.5">Phone</div>
-                    <a
-                      href={`tel:${CONTACT_PHONE}`}
-                      className="text-white font-medium hover:text-[#38BDF8] transition-colors"
-                    >
-                      {CONTACT_PHONE}
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#38BDF8]/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-[#38BDF8]" />
-                  </div>
-                  <div>
-                    <div className="text-slate-400 text-sm mb-0.5">
-                      Headquarters
-                    </div>
-                    <div className="text-white font-medium">
-                      {CONTACT_ADDRESS}
-                    </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Emergency Support</span>
+                    <span className="text-white">24/7/365</span>
                   </div>
                 </div>
               </div>
-
-              {/* Trust badges */}
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                {[
-                  { label: "Free 60-min audit", icon: CheckCircle },
-                  { label: "No commitment required", icon: CheckCircle },
-                  { label: "Response within 2 hours", icon: CheckCircle },
-                  { label: "NDA available on request", icon: CheckCircle },
-                ].map((badge) => {
-                  const Icon = badge.icon;
-                  return (
-                    <div
-                      key={badge.label}
-                      className="flex items-center gap-2 text-slate-300 text-sm"
-                    >
-                      <Icon className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                      {badge.label}
-                    </div>
-                  );
-                })}
-              </div>
-            </motion.div>
-
-            {/* Contact Form */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-80px" }}
-              variants={fadeInRight}
-            >
-              {formSubmitted ? (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="bg-white/[0.03] border border-emerald-500/30 rounded-2xl p-10 text-center"
-                >
-                  <div className="w-16 h-16 rounded-full bg-emerald-500/10 flex items-center justify-center mx-auto mb-5">
-                    <CheckCircle className="w-8 h-8 text-emerald-400" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-3">
-                    Message Received!
-                  </h3>
-                  <p className="text-slate-400">
-                    Thank you for reaching out. A senior architect will contact
-                    you within 2 business hours to schedule your free IT audit.
-                  </p>
-                </motion.div>
-              ) : (
-                <form
-                  onSubmit={handleFormSubmit}
-                  className="bg-white/[0.03] border border-white/10 rounded-2xl p-8 space-y-5"
-                >
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div>
-                      <label className="block text-slate-300 text-sm font-medium mb-2">
-                        Full Name
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleFormChange}
-                        placeholder="John Smith"
-                        required
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#38BDF8]/50 focus:bg-white/8 transition-all"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-slate-300 text-sm font-medium mb-2">
-                        Work Email
-                      </label>
-                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleFormChange}
-                        placeholder="john@company.com"
-                        required
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#38BDF8]/50 focus:bg-white/8 transition-all"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-slate-300 text-sm font-medium mb-2">
-                      Company
-                    </label>
-                    <input
-                      type="text"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleFormChange}
-                      placeholder="Acme Corporation"
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#38BDF8]/50 focus:bg-white/8 transition-all"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-slate-300 text-sm font-medium mb-2">
-                      Service of Interest
-                    </label>
-                    <select
-                      name="service"
-                      value={formData.service}
-                      onChange={handleFormChange}
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-[#38BDF8]/50 transition-all appearance-none"
-                    >
-                      <option value="" className="bg-[#0F172A]">
-                        Select a service...
-                      </option>
-                      <option value="cloud" className="bg-[#0F172A]">
-                        Cloud Infrastructure
-                      </option>
-                      <option value="security" className="bg-[#0F172A]">
-                        Cybersecurity
-                      </option>
-                      <option value="network" className="bg-[#0F172A]">
-                        Network Solutions
-                      </option>
-                      <option value="analytics" className="bg-[#0F172A]">
-                        Data Analytics
-                      </option>
-                      <option value="devops" className="bg-[#0F172A]">
-                        DevOps & Automation
-                      </option>
-                      <option value="support" className="bg-[#0F172A]">
-                        Managed IT Support
-                      </option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-slate-300 text-sm font-medium mb-2">
-                      Tell us about your challenge
-                    </label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleFormChange}
-                      placeholder="Describe your current IT challenges or goals..."
-                      rows={4}
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#38BDF8]/50 focus:bg-white/8 transition-all resize-none"
-                    />
-                  </div>
-                  <motion.button
-                    type="submit"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="w-full py-4 rounded-xl bg-gradient-to-r from-[#1E40AF] to-[#38BDF8] text-white font-semibold text-base shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 transition-shadow flex items-center justify-center gap-2"
-                  >
-                    Request Free IT Audit <ArrowRight className="w-5 h-5" />
-                  </motion.button>
-                </form>
-              )}
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* ── CTA BANNER ───────────────────────────────────────────────────── */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A8A] via-[#1E40AF] to-[#0369A1]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,rgba(56,189,248,0.15),transparent)]" />
-        <div
-          className="absolute inset-0 opacity-[0.05]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-          }}
-        />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={staggerContainer}
-          >
-            <motion.h2
-              variants={slideInFromBottom}
-              className="text-4xl lg:text-5xl font-extrabold text-white mb-5"
-            >
-              Ready to modernize your infrastructure?
-            </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto"
-            >
-              Join 500+ enterprise clients who trust {APP_NAME} to power their
-              most critical systems. Your free IT audit is one click away.
-            </motion.p>
-            <motion.div
-              variants={fadeInUp}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
-              <motion.a
-                href="#contact"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="px-8 py-4 rounded-xl bg-white text-[#1E40AF] font-bold text-base hover:bg-blue-50 transition-colors shadow-xl flex items-center gap-2 justify-center"
-              >
-                Get Your Free Audit <ArrowRight className="w-5 h-5" />
-              </motion.a>
-              <motion.a
-                href={`tel:${CONTACT_PHONE}`}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                className="px-8 py-4 rounded-xl bg-white/10 border border-white/30 text-white font-semibold text-base hover:bg-white/20 transition-colors flex items-center gap-2 justify-center"
-              >
-                <Phone className="w-5 h-5" /> Call Us Now
-              </motion.a>
-            </motion.div>
-          </motion.div>
         </div>
       </section>
     </main>

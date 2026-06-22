@@ -47,9 +47,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#060D1F] border-t border-white/5">
+    <footer className="bg-black border-t border-white/10">
       {/* Newsletter Banner */}
-      <div className="border-b border-white/5">
+      <div className="border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <motion.div
             initial="hidden"
@@ -62,7 +62,7 @@ export default function Footer() {
               <h3 className="text-xl font-bold text-white mb-1">
                 Stay ahead of the curve
               </h3>
-              <p className="text-slate-400 text-sm">
+              <p className="text-gray-400 text-sm">
                 Get the latest IT insights and industry news delivered to your inbox.
               </p>
             </motion.div>
@@ -74,11 +74,11 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 md:w-64 px-4 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#38BDF8]/50 focus:bg-white/8 transition-all"
+                className="flex-1 md:w-64 px-4 py-2.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-white/50 focus:bg-white/15 transition-all"
               />
               <button
                 type="submit"
-                className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-[#1E40AF] to-[#38BDF8] text-white text-sm font-semibold hover:opacity-90 transition-opacity flex items-center gap-2 whitespace-nowrap"
+                className="px-5 py-2.5 rounded-lg bg-white text-black text-sm font-semibold hover:bg-gray-200 transition-colors flex items-center gap-2 whitespace-nowrap"
               >
                 Subscribe <ArrowRight className="w-4 h-4" />
               </button>
@@ -99,47 +99,49 @@ export default function Footer() {
           {/* Brand Column */}
           <motion.div variants={fadeInUp} className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#1E40AF] to-[#38BDF8] flex items-center justify-center shadow-lg shadow-blue-500/30">
-                <Sparkles className="w-4 h-4 text-white" />
+              <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center shadow-lg transition-shadow duration-300">
+                <Sparkles className="w-4 h-4 text-black" />
               </div>
               <span className="text-xl font-bold tracking-tight">
                 <span className="text-white">{APP_NAME}</span>
-                <span className="text-[#38BDF8]">.</span>
+                <span className="text-white">.</span>
               </span>
             </Link>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Engineering enterprise-grade technology solutions that power the world&apos;s most ambitious businesses.
+            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+              {APP_FULL_NAME} delivers enterprise-grade IT solutions that help businesses scale securely and efficiently in the digital age.
             </p>
-            <div className="flex items-center gap-3">
-              {socialLinks.map(({ icon: Icon, href, label }) => (
+            {/* Social Links */}
+            <div className="flex items-center gap-2">
+              {socialLinks.map((social) => (
                 <a
-                  key={label}
-                  href={href}
+                  key={social.label}
+                  href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={label}
-                  className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-[#38BDF8] hover:border-[#38BDF8]/30 hover:bg-[#38BDF8]/5 transition-all duration-200"
+                  aria-label={social.label}
+                  className="w-9 h-9 rounded-lg border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/30 transition-all duration-200"
                 >
-                  <Icon className="w-4 h-4" />
+                  <social.icon className="w-4 h-4" />
                 </a>
               ))}
             </div>
           </motion.div>
 
-          {/* Navigation */}
+          {/* Navigation Column */}
           <motion.div variants={fadeInUp}>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider flex items-center gap-2">
               Navigation
+              <span className="flex-1 h-px bg-white opacity-20 ml-1" />
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-2.5">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={getLinkHref(link.href)}
                     onClick={(e) => handleAnchorClick(e, link.href)}
-                    className="text-slate-400 hover:text-[#38BDF8] text-sm transition-colors duration-200 flex items-center gap-1.5 group"
+                    className="text-gray-400 hover:text-white text-sm flex items-center gap-1.5 group transition-colors duration-200"
                   >
-                    <span className="w-1 h-1 rounded-full bg-[#38BDF8]/0 group-hover:bg-[#38BDF8] transition-colors duration-200" />
+                    <ArrowRight className="w-3 h-3 text-white opacity-0 group-hover:opacity-100 -ml-1 transition-all duration-200 group-hover:ml-0" />
                     {link.label}
                   </Link>
                 </li>
@@ -147,20 +149,21 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Services */}
+          {/* Services Column */}
           <motion.div variants={fadeInUp}>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider flex items-center gap-2">
               Services
+              <span className="flex-1 h-px bg-white opacity-20 ml-1" />
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-2.5">
               {footerServices.map((service) => (
                 <li key={service.label}>
                   <Link
                     href={getLinkHref(service.href)}
                     onClick={(e) => handleAnchorClick(e, service.href)}
-                    className="text-slate-400 hover:text-[#38BDF8] text-sm transition-colors duration-200 flex items-center gap-1.5 group"
+                    className="text-gray-400 hover:text-white text-sm flex items-center gap-1.5 group transition-colors duration-200"
                   >
-                    <span className="w-1 h-1 rounded-full bg-[#38BDF8]/0 group-hover:bg-[#38BDF8] transition-colors duration-200" />
+                    <ArrowRight className="w-3 h-3 text-white opacity-0 group-hover:opacity-100 -ml-1 transition-all duration-200 group-hover:ml-0" />
                     {service.label}
                   </Link>
                 </li>
@@ -168,35 +171,36 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Contact */}
+          {/* Contact Column */}
           <motion.div variants={fadeInUp}>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider flex items-center gap-2">
               Contact
+              <span className="flex-1 h-px bg-white opacity-20 ml-1" />
             </h4>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               <li>
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
-                  className="flex items-start gap-3 text-slate-400 hover:text-[#38BDF8] text-sm transition-colors duration-200 group"
+                  className="text-gray-400 hover:text-white text-sm flex items-start gap-2.5 group transition-colors duration-200"
                 >
-                  <Mail className="w-4 h-4 mt-0.5 shrink-0 text-[#38BDF8]/60 group-hover:text-[#38BDF8]" />
+                  <Mail className="w-4 h-4 text-white mt-0.5 shrink-0" />
                   {CONTACT_EMAIL}
                 </a>
               </li>
               <li>
                 <a
                   href={`tel:${CONTACT_PHONE}`}
-                  className="flex items-start gap-3 text-slate-400 hover:text-[#38BDF8] text-sm transition-colors duration-200 group"
+                  className="text-gray-400 hover:text-white text-sm flex items-start gap-2.5 group transition-colors duration-200"
                 >
-                  <Phone className="w-4 h-4 mt-0.5 shrink-0 text-[#38BDF8]/60 group-hover:text-[#38BDF8]" />
+                  <Phone className="w-4 h-4 text-white mt-0.5 shrink-0" />
                   {CONTACT_PHONE}
                 </a>
               </li>
               <li>
-                <div className="flex items-start gap-3 text-slate-400 text-sm">
-                  <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-[#38BDF8]/60" />
-                  <span>{CONTACT_ADDRESS}</span>
-                </div>
+                <span className="text-gray-400 text-sm flex items-start gap-2.5">
+                  <MapPin className="w-4 h-4 text-white mt-0.5 shrink-0" />
+                  {CONTACT_ADDRESS}
+                </span>
               </li>
             </ul>
           </motion.div>
@@ -204,21 +208,25 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-slate-500 text-sm">
-            &copy; {new Date().getFullYear()} {APP_FULL_NAME}. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6">
-            <Link href="#" className="text-slate-500 hover:text-slate-300 text-sm transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-slate-500 hover:text-slate-300 text-sm transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-slate-500 hover:text-slate-300 text-sm transition-colors">
-              Cookie Policy
-            </Link>
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-gray-500 text-sm">
+              &copy; {new Date().getFullYear()} {APP_FULL_NAME}. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4 text-sm">
+              <Link href="/privacy" className="text-gray-500 hover:text-white transition-colors duration-200">
+                Privacy Policy
+              </Link>
+              <span className="text-gray-700">&bull;</span>
+              <Link href="/terms" className="text-gray-500 hover:text-white transition-colors duration-200">
+                Terms of Service
+              </Link>
+              <span className="text-gray-700">&bull;</span>
+              <Link href="/sitemap" className="text-gray-500 hover:text-white transition-colors duration-200">
+                Sitemap
+              </Link>
+            </div>
           </div>
         </div>
       </div>

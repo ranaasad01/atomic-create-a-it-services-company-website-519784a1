@@ -50,7 +50,7 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0F172A]/95 backdrop-blur-md shadow-lg shadow-black/20 border-b border-white/5"
+          ? "bg-white/95 backdrop-blur-md shadow-lg shadow-black/10 border-b border-black/10"
           : "bg-transparent"
       }`}
     >
@@ -58,12 +58,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#1E40AF] to-[#38BDF8] flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-shadow duration-300">
+            <div className="w-8 h-8 rounded-lg bg-black flex items-center justify-center shadow-lg shadow-black/30 group-hover:shadow-black/50 transition-shadow duration-300">
               <Sparkles className="w-4 h-4 text-white" />
             </div>
             <span className="text-xl font-bold tracking-tight">
-              <span className="text-white">{APP_NAME}</span>
-              <span className="text-[#38BDF8]">.</span>
+              <span className={scrolled ? "text-black" : "text-white"}>{APP_NAME}</span>
+              <span className={scrolled ? "text-black" : "text-white"}>.</span>
             </span>
           </Link>
 
@@ -76,7 +76,11 @@ export default function Navbar() {
                 onClick={(e) => handleAnchorClick(e, link.href)}
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                   pathname === link.href
-                    ? "text-[#38BDF8] bg-[#38BDF8]/10"
+                    ? scrolled
+                      ? "text-black bg-black/10"
+                      : "text-white bg-white/10"
+                    : scrolled
+                    ? "text-gray-600 hover:text-black hover:bg-black/5"
                     : "text-slate-300 hover:text-white hover:bg-white/5"
                 }`}
               >
@@ -90,7 +94,7 @@ export default function Navbar() {
             <Link
               href={getLinkHref(navCTA.href)}
               onClick={(e) => handleAnchorClick(e, navCTA.href)}
-              className="px-5 py-2.5 text-sm font-semibold rounded-lg bg-gradient-to-r from-[#1E40AF] to-[#38BDF8] text-white hover:opacity-90 transition-all duration-200 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105 active:scale-95"
+              className="px-5 py-2.5 text-sm font-semibold rounded-lg bg-black text-white hover:opacity-90 transition-all duration-200 shadow-lg shadow-black/25 hover:shadow-black/40 hover:scale-105 active:scale-95"
             >
               {navCTA.label}
             </Link>
@@ -99,7 +103,11 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition-colors"
+            className={`lg:hidden p-2 rounded-lg transition-colors ${
+              scrolled
+                ? "text-gray-700 hover:text-black hover:bg-black/5"
+                : "text-white hover:text-white hover:bg-white/5"
+            }`}
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -107,47 +115,40 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Panel */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="lg:hidden overflow-hidden bg-[#0F172A]/98 backdrop-blur-md border-t border-white/5"
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="lg:hidden overflow-hidden bg-white/98 backdrop-blur-md border-b border-black/10"
           >
-            <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
-              {navLinks.map((link, i) => (
-                <motion.div
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 space-y-1">
+              {navLinks.map((link) => (
+                <Link
                   key={link.href}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.05, duration: 0.25 }}
+                  href={getLinkHref(link.href)}
+                  onClick={(e) => handleAnchorClick(e, link.href)}
+                  className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg border transition-all duration-200 ${
+                    pathname === link.href
+                      ? "text-black bg-black/10 border-black/30"
+                      : "text-gray-600 hover:text-black hover:bg-black/5 border-transparent"
+                  }`}
                 >
-                  <Link
-                    href={getLinkHref(link.href)}
-                    onClick={(e) => handleAnchorClick(e, link.href)}
-                    className="block px-4 py-3 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </motion.div>
+                  {link.label}
+                </Link>
               ))}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: navLinks.length * 0.05, duration: 0.25 }}
-                className="mt-2 pt-2 border-t border-white/5"
-              >
+              <div className="pt-2 pb-1">
                 <Link
                   href={getLinkHref(navCTA.href)}
                   onClick={(e) => handleAnchorClick(e, navCTA.href)}
-                  className="block w-full text-center px-5 py-3 text-sm font-semibold rounded-lg bg-gradient-to-r from-[#1E40AF] to-[#38BDF8] text-white hover:opacity-90 transition-opacity"
+                  className="flex items-center justify-center w-full px-5 py-3 text-sm font-semibold rounded-lg bg-black text-white hover:opacity-90 transition-all duration-200"
                 >
                   {navCTA.label}
                 </Link>
-              </motion.div>
+              </div>
             </div>
           </motion.div>
         )}
