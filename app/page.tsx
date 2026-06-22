@@ -450,8 +450,7 @@ export default function HomePage() {
                 className="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-black hover:shadow-md shadow-sm transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-black flex items-center justify-center mb-4">
-                  <service.icon className="w-6 h-6 text-white" />
-                </div>
+                  <service.icon className="w-6 h-6 text-white" />Predictive</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">{service.description}</p>
                 <ul className="space-y-2 mb-4">
