@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "NexaCore IT Solutions | Enterprise Technology Services",
-    template: "%s | NexaCore IT Solutions",
+    default: "Datics.ai | Enterprise Technology Services",
+    template: "%s | Datics.ai",
   },
   description:
-    "NexaCore IT Solutions delivers enterprise-grade cloud infrastructure, cybersecurity, networking, and managed IT services to help businesses scale securely and efficiently.",
+    "Datics.ai delivers enterprise-grade cloud infrastructure, cybersecurity, networking, and managed IT services to help businesses scale securely and efficiently.",
   keywords: [
     "IT services",
     "cloud computing",
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     "digital transformation",
     "enterprise technology",
   ],
-  authors: [{ name: "NexaCore IT Solutions" }],
-  creator: "NexaCore IT Solutions",
+  authors: [{ name: "Datics.ai" }],
+  creator: "Datics.ai",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://nexacore.io",
-    siteName: "NexaCore IT Solutions",
-    title: "NexaCore IT Solutions | Enterprise Technology Services",
+    url: "https://datics.ai",
+    siteName: "Datics.ai",
+    title: "Datics.ai | Enterprise Technology Services",
     description:
       "Enterprise-grade cloud, cybersecurity, and managed IT services for modern businesses.",
     images: [
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
         url: "/images/og-nexacore.jpg",
         width: 1200,
         height: 630,
-        alt: "NexaCore IT Solutions",
+        alt: "Datics.ai",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NexaCore IT Solutions",
+    title: "Datics.ai",
     description: "Enterprise-grade IT services for modern businesses.",
   },
   robots: {
